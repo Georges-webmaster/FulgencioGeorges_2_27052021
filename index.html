@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Page acceuil Reservia</title>
   </head>
 
@@ -37,32 +38,31 @@
     </div>
 
     <div id="champ_recherche">
-        <form action="traitement.php" method="post">
-         <label for="ville"><i class="fas fa-map-marker-alt">
-         </i></label>
+
+      <i class="fas fa-map-marker-alt"></i>
          <input type="text" name="ville" id="ville"  placeholder="Destination Marseille, France" class="champ_saisie">
         <button type="submit" class="bouton_rechercher">Rechercher
-        </button></form>
+        </button>  
+        
     </div>
 
     <div id="filtres">
         <p class="texte_filtre">
         Filtres
       </p> 
-      <form action="traitement.php" method="post"></form>
-      
-         <div class="champ_saisie_economique"><button  type="button"  class="bouton_filtre" placeholder="Eco"><i class="fas fa-money-bill-wave"></i> 
+
+         <div class="champ_saisie_economique"><button  type="button"  class="bouton_filtre">Économique<i class="fas fa-money-bill-wave"></i> 
         </i></button></div>
 
-         <div class="champ_saisie_economique"><button  type="button"  class="bouton_filtre" placeholder="Eco"><i class="fas fa-child"></i>
+         <div class="champ_saisie_economique"><button  type="button"  class="bouton_filtre">Familial<i class="fas fa-child"></i>
         </button></div>
 
-         <div class="champ_saisie_economique"><button  type="button"  class="bouton_filtre" placeholder="Eco"><i class="fas fa-heart"></i>
+         <div class="champ_saisie_economique"><button  type="button"  class="bouton_filtre">Romantique<i class="fas fa-heart"></i>
         </button></div>
 
-        <div class="champ_saisie_economique"><button  type="button"  class="bouton_filtre" placeholder="Eco"><i class="fas fa-dog"></i>
+        <div class="champ_saisie_economique"><button  type="button"  class="bouton_filtre">Animaux autorisés<i class="fas fa-dog"></i>
         </button></div>
-         </form>
+        
     </div>
           
     <div id="info_resultat_recherche"> 

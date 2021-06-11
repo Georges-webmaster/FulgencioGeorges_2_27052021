@@ -154,8 +154,12 @@ nav a:hover {
 
 /*Bloc filtres*/
 #filtres {
-  padding-top: 30px;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 30px;
+  margin-left: 30px;
+  padding-left: 30px;
 }
 
 .champ_saisie_economique {
@@ -168,13 +172,13 @@ nav a:hover {
 }
 
 .texte_filtre {
-  margin-left: 50px;
+  margin-left: 30px;
   margin-right: 15px;
 }
 
 .bouton_filtre {
-  width: 300px;
-  height: 49px;
+  width: 200px;
+  height: 50px;
   border-radius: 20px;
   border: 2px #f2f2f2 solid;
   background-color: white;
@@ -187,40 +191,37 @@ nav a:hover {
   padding: 17px;
   float: left;
   text-align: center;
+  margin: -10px;
 }
 
 .fa-child {
   color: #0065fc;
-  padding: 10px;
   background-color: #deebff;
-  border-radius: 60px;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  padding-top: 15px;
+  border-radius: 70px;
+  padding: 17px;
   float: left;
+  text-align: center;
+  margin: -10px;
 }
 
 .fa-heart {
   color: #0065fc;
-  width: 45px;
-  height: 45px;
   background-color: #deebff;
-  border-radius: 90px;
-  text-align: center;
+  border-radius: 70px;
+  padding: 17px;
   float: left;
+  text-align: center;
+  margin: -10px;
 }
 
 .fa-dog {
   color: #0065fc;
-  padding: 10px;
   background-color: #deebff;
-  border-radius: 60px;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  padding-top: 15px;
+  border-radius: 70px;
+  padding: 17px;
   float: left;
+  text-align: center;
+  margin: -10px;
 }
 
 /*bloc informatif nombre logements*/
@@ -231,14 +232,14 @@ nav a:hover {
 
 .info_recherche {
   margin-left: 10px;
-  margin-top: 30px;
+  margin-top: 27px;
 }
 
 .fa-info {
   color: #0065fc;
-  border-radius: 50px;
-  width: 25px;
-  height: 25px;
+  border-radius: 30px;
+  width: 15px;
+  height: 15px;
   border: 2px #f2f2f2 solid;
   text-align: center;
   margin-left: 50px;
@@ -249,7 +250,6 @@ nav a:hover {
 /*Bloc central*/
 #bloc_central {
   background-color: white;
-  border: solid 3px rgb(255, 0, 13);
   display: flex;
 }
 
@@ -259,7 +259,7 @@ nav a:hover {
   background-color: #f2f2f2;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  border: 3px rgb(141, 71, 255) solid;
+  border: 3px #f2f2f2 solid;
   border-radius: 15px;
   margin-left: 2%;
   width: 66%;
@@ -299,7 +299,7 @@ nav a:hover {
 }
 
 .image_cannebiere {
- padding-left: 2px;
+  padding-left: 2px;
   padding-top: 2px;
   padding-bottom: 2px;
   padding-right: 2px;
@@ -513,7 +513,7 @@ aside {
   background-color: #f2f2f2;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  border: 3px blueviolet double;
+  border: 3px #f2f2f2 solid;
   border-radius: 15px;
   width: 30%;
   padding: 2%;
@@ -524,8 +524,8 @@ aside {
 
 #hotel_soleil {
   background-color: white;
-  width: 90%;
-  height: 20%;
+  width: 390px;
+  height: 220px;
   padding-left: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -539,30 +539,30 @@ aside {
   padding-top: 2px;
   padding-bottom: 2px;
   padding-left: 10px;
-  text-align: right;
-  }
+}
 
 .image_soleil_matin {
   padding-left: 2px;
   padding-top: 2px;
   padding-bottom: 2px;
   padding-right: 2px;
-  border-radius: 20px 20px 0px 0px;
-  height: 30%;
-  width: 30%;
+  border-radius: 20px 20px 20px 20px;
+  width: 175px;
+  height: 190px;
+  float: left;
 }
 
 .icone_soleil_matin {
   padding-top: 2px;
   padding-left: 10px;
   text-align: left;
-  color: mediumvioletred;
+  color: #0065fc;
 }
 
 #coeur_eau {
   background-color: white;
-  width: 90%;
-  height: 20%;
+  width: 390px;
+  height: 220px;
   padding-left: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -584,23 +584,23 @@ aside {
   padding-top: 2px;
   padding-bottom: 2px;
   padding-right: 2px;
-  border-radius: 20px 20px 0px 0px;
-  background-color: mediumorchid;
-  height: 60%;
-  width: 95%;
+  border-radius: 20px 20px 20px 20px;
+  width: 175px;
+  height: 190px;
+  float: left;
 }
 
 .icone_coeur_eau {
   padding-top: 2px;
   padding-left: 10px;
   text-align: left;
-  color: mediumvioletred;
+  color: #0065fced;
 }
 
 #tout_bleu {
   background-color: white;
-  width: 90%;
-  height: 20%;
+  width: 390px;
+  height: 220px;
   padding-left: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -622,22 +622,22 @@ aside {
   padding-top: 2px;
   padding-bottom: 2px;
   padding-right: 2px;
-  border-radius: 20px 20px 0px 0px;
-  background-color: mediumorchid;
-  height: 60%;
-  width: 95%;
+  border-radius: 20px 20px 20px 20px;
+  width: 175px;
+  height: 190px;
+  float: left;
 }
 .icone_tout_bleu {
   padding-top: 2px;
   padding-left: 10px;
   text-align: left;
-  color: mediumvioletred;
+  color: #0065fc;
 }
 
 /*Bloc activité*/
 
 #bloc_activite {
-  background-color: dimgray;
+  background-color: #f2f2f2;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -842,7 +842,7 @@ aside {
 /*bloc footer*/
 
 footer {
-  background-color: green;
+  background-color: #f2f2f2;
   display: flex;
   flex-direction: row;
   width: 100%;
