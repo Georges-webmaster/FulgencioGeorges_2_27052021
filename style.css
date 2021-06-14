@@ -21,9 +21,8 @@ button {
 }
 
 #bloc_page {
-  width: 80%;
+  width: 90%;
   height: 100%;
-  border: 3px burlywood solid;
   margin: auto;
 }
 
@@ -145,7 +144,6 @@ nav a:hover {
   border-radius: 0px 20px 20px 0px / 50px 15px 15px 0px;
   margin-top: 1px;
   margin-bottom: 1px;
-  margin-left: none;
   box-sizing: border-box;
   color: white;
   font-weight: bold;
@@ -251,6 +249,8 @@ nav a:hover {
 #bloc_central {
   background-color: white;
   display: flex;
+  width: 90%;
+  height: 100%;
 }
 
 /*bloc offre hébergement*/
@@ -273,15 +273,15 @@ nav a:hover {
 }
 
 .titre_hebergement {
-  border: 3px gold solid;
   height: 5%;
   width: 100%;
   display: flex;
   flex-direction: row;
   padding-top: 5px;
-  padding-bottom: 2px;
-  margin-top: 5px;
-  margin-bottom: 10px;
+  padding-bottom: 5px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: 30px;
 }
 
 #offre_cannebiere {
@@ -509,6 +509,11 @@ nav a:hover {
 }
 
 /*Bloc complémentaire informatif aside*/
+
+.titre_populaire {
+  padding-bottom: 20px;
+}
+
 aside {
   background-color: #f2f2f2;
   background-attachment: fixed;
