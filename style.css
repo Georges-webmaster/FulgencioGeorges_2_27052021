@@ -21,8 +21,7 @@ button {
 }
 
 #bloc_page {
-  width: 90%;
-  height: 100%;
+  width: 1130px;
   margin: auto;
 }
 
@@ -42,11 +41,9 @@ header {
 }
 
 #logo_reservia {
-  width: 700px;
-  height: 30%;
-  padding: 2px 2px 2px 2px;
-  margin-top: 2px;
-  margin-left: 20px;
+  width: 1130px;
+  margin-top: 40px;
+  padding-bottom: 20px;
 }
 
 /*Menu de navigation*/
@@ -54,9 +51,14 @@ nav ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  margin-top: 50px;
-  margin-right: 200px;
-  margin-left: 300px;
+  margin-left: 20px;
+  margin-right: 22px;
+  margin-bottom: 10px;
+  margin-top: 65px;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 302.617px;
+  height: 32px;
 }
 
 nav li {
@@ -65,12 +67,11 @@ nav li {
 
 nav a {
   font-size: 1.3em;
-  color: #0065fc;
   text-decoration: none;
+  color: #0065fc;
 }
 
 nav a:hover {
-  color: #0065fc;
   margin-top: 5px;
 }
 
@@ -82,19 +83,21 @@ nav a:hover {
   margin-left: 20px;
 }
 .titre_slogan {
-  width: 650px;
+  width: 500px;
+  margin-bottom: 10.936px;
+  margin-top: 67.936px;
+  margin-left: -15px;
   height: 20px;
   text-align: left;
-  margin-left: 20px;
 }
 
 .complement_slogan {
-  width: 500px;
   height: 20px;
-  margin-left: 20px;
   text-align: left;
   margin-bottom: 1px;
-  margin-top: 1px;
+  margin-left: -14px;
+  width: 276px;
+  margin-top: 8px;
 }
 
 /*Bloc champ recherche*/
@@ -103,10 +106,10 @@ nav a:hover {
   flex-direction: row;
   width: 450px;
   height: 70px;
-  margin-top: 1px;
-  margin-bottom: 1px;
   margin-right: 50px;
-  margin-left: 50px;
+  margin-left: 26px;
+  margin-top: -5px;
+  margin-bottom: -10px;
 }
 
 .fa-map-marker-alt {
@@ -119,7 +122,6 @@ nav a:hover {
   padding-top: 10px;
   margin-top: 1px;
   margin-bottom: 1px;
-  margin-right: none;
   cursor: pointer;
 }
 
@@ -129,8 +131,6 @@ nav a:hover {
   border: 2px solid #f2f2f2;
   padding-left: 10px;
   padding-right: 10px;
-  margin-left: none;
-  margin-right: none;
   margin-right: 0px;
   margin-top: 1px;
   margin-bottom: 1px;
@@ -170,8 +170,9 @@ nav a:hover {
 }
 
 .texte_filtre {
-  margin-left: 30px;
-  margin-right: 15px;
+  width: 104.267px;
+  margin-left: -33px;
+  margin-right: -18px;
 }
 
 .bouton_filtre {
@@ -240,17 +241,17 @@ nav a:hover {
   height: 15px;
   border: 2px #f2f2f2 solid;
   text-align: center;
-  margin-left: 50px;
+  margin-left: 15px;
   padding: 9px;
   float: left;
 }
 
 /*Bloc central*/
 #bloc_central {
-  background-color: white;
+  background-color: #ffffff;
   display: flex;
-  width: 90%;
-  height: 100%;
+  width: 1130px;
+  height: 800px;
 }
 
 /*bloc offre hébergement*/
@@ -262,8 +263,8 @@ nav a:hover {
   border: 3px #f2f2f2 solid;
   border-radius: 15px;
   margin-left: 2%;
-  width: 66%;
-  height: 100%;
+  width: 755px;
+  height: 754px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -273,29 +274,27 @@ nav a:hover {
 }
 
 .titre_hebergement {
-  height: 5%;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
+  height: 31px;
+  margin-bottom: 7px;
+  width: 585.617px;
+  margin-top: 40px;
   padding-top: 5px;
   padding-bottom: 5px;
-  margin-top: 40px;
-  margin-bottom: 20px;
   margin-left: 30px;
 }
 
 #offre_cannebiere {
-  background-color: white;
-  width: 30%;
-  height: 80%;
-  padding-left: 2px;
-  padding-top: 2px;
+  width: 220px;
+height: 240px;
+  margin-left: 8px;
+  padding-left: 0px;
+  padding-right: 5px;
+  padding-top: -7px;
+  margin-bottom: 40px;
   padding-bottom: 2px;
-  padding-right: 2px;
   text-align: center;
   border-radius: 20px;
-  margin-left: 10px;
-  margin-bottom: 40px;
+  background-color: white;
 }
 
 .image_cannebiere {
@@ -304,8 +303,8 @@ nav a:hover {
   padding-bottom: 2px;
   padding-right: 2px;
   border-radius: 20px 20px 0px 0px;
-  height: 60%;
-  width: 95%;
+  height: 120px;
+  width: 177px;
 }
 
 .texte_cannebiere {
@@ -324,15 +323,17 @@ nav a:hover {
 }
 
 #offre_hotel_port {
-  background-color: white;
-  width: 30%;
-  height: 80%;
-  padding-left: 2px;
-  padding-top: 2px;
-  padding-bottom: 4px;
-  padding-right: 2px;
+  width: 220px;
+height: 240px;
+  margin-left: 8px;
+  padding-left: 0px;
+  padding-right: 5px;
+  padding-top: -7px;
+  margin-bottom: 40px;
+  padding-bottom: 2px;
   text-align: center;
   border-radius: 20px;
+  background-color: white;
 }
 
 .image_hotel_port {
@@ -360,16 +361,17 @@ nav a:hover {
 }
 
 #offre_hotel_mouette {
-  background-color: white;
-  width: 30%;
-  height: 80%;
-  padding-left: 2px;
-  padding-top: 2px;
+  width: 220px;
+height: 240px;
+  margin-left: 8px;
+  padding-left: 0px;
+  padding-right: 5px;
+  padding-top: -7px;
+  margin-bottom: 40px;
   padding-bottom: 2px;
-  padding-right: 2px;
-  margin-right: 10px;
   text-align: center;
   border-radius: 20px;
+  background-color: white;
 }
 
 .image_mouette {
@@ -396,16 +398,17 @@ nav a:hover {
 }
 
 #offre_hotel_mer {
-  background-color: white;
-  width: 30%;
-  height: 80%;
-  padding-left: 2px;
-  padding-top: 2px;
+  width: 220px;
+height: 240px;
+  margin-left: 8px;
+  padding-left: 0px;
+  padding-right: 5px;
+  padding-top: -7px;
+  margin-bottom: 40px;
   padding-bottom: 2px;
-  padding-right: 2px;
   text-align: center;
   border-radius: 20px;
-  margin-left: 10px;
+  background-color: white;
 }
 
 .image_hotel_mer {
@@ -431,15 +434,17 @@ nav a:hover {
 }
 
 #offre_auberge_panier {
-  background-color: white;
-  width: 30%;
-  height: 80%;
-  padding-left: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  width: 220px;
+height: 240px;
+  margin-left: 8px;
+  padding-left: 0px;
   padding-right: 5px;
+  padding-top: -7px;
+  margin-bottom: 40px;
+  padding-bottom: 2px;
   text-align: center;
   border-radius: 20px;
+  background-color: white;
 }
 
 .image_auberge_panier {
@@ -467,16 +472,17 @@ nav a:hover {
 }
 
 #offre_hotel_amina {
-  background-color: white;
-  width: 30%;
-  height: 80%;
-  padding-left: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  width: 220px;
+height: 240px;
+  margin-left: 8px;
+  padding-left: 0px;
   padding-right: 5px;
-  margin-right: 10px;
+  padding-top: -7px;
+  margin-bottom: 40px;
+  padding-bottom: 2px;
   text-align: center;
   border-radius: 20px;
+  background-color: white;
 }
 
 .image_hotel_anima {
@@ -511,7 +517,11 @@ nav a:hover {
 /*Bloc complémentaire informatif aside*/
 
 .titre_populaire {
-  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-left: -9px;
+  margin-bottom: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 aside {
@@ -520,24 +530,24 @@ aside {
   background-repeat: no-repeat;
   border: 3px #f2f2f2 solid;
   border-radius: 15px;
-  width: 30%;
-  padding: 2%;
+  width: 360px;
+  padding: 20px;
   position: relative;
-  margin-left: 50px;
   margin-right: 20px;
+  margin-left: 18px;
 }
 
 #hotel_soleil {
   background-color: white;
-  width: 390px;
-  height: 220px;
   padding-left: 5px;
   padding-top: 5px;
-  padding-bottom: 5px;
+  padding-bottom: 20px;
   padding-right: 5px;
   text-align: center;
   border-radius: 20px;
-  margin-left: 10px;
+  width: 356px;
+  margin-left: -9px;
+  height: 190px;
 }
 
 .texte_soleil_matin {
@@ -552,9 +562,9 @@ aside {
   padding-bottom: 2px;
   padding-right: 2px;
   border-radius: 20px 20px 20px 20px;
-  width: 175px;
-  height: 190px;
   float: left;
+  width: 174px;
+  height: 162px;
 }
 
 .icone_soleil_matin {
@@ -566,15 +576,15 @@ aside {
 
 #coeur_eau {
   background-color: white;
-  width: 390px;
-  height: 220px;
   padding-left: 5px;
   padding-top: 5px;
-  padding-bottom: 5px;
+  padding-bottom: 20px;
   padding-right: 5px;
   text-align: center;
   border-radius: 20px;
-  margin-left: 10px;
+  width: 356px;
+  margin-left: -9px;
+  height: 190px;
 }
 
 .texte_coeur_eau {
@@ -590,9 +600,9 @@ aside {
   padding-bottom: 2px;
   padding-right: 2px;
   border-radius: 20px 20px 20px 20px;
-  width: 175px;
-  height: 190px;
   float: left;
+  width: 174px;
+  height: 162px;
 }
 
 .icone_coeur_eau {
@@ -604,15 +614,15 @@ aside {
 
 #tout_bleu {
   background-color: white;
-  width: 390px;
-  height: 220px;
   padding-left: 5px;
   padding-top: 5px;
-  padding-bottom: 5px;
+  padding-bottom: 20px;
   padding-right: 5px;
   text-align: center;
   border-radius: 20px;
-  margin-left: 10px;
+  width: 356px;
+  margin-left: -9px;
+  height: 190px;
 }
 
 .texte_tout_bleu {
@@ -628,10 +638,11 @@ aside {
   padding-bottom: 2px;
   padding-right: 2px;
   border-radius: 20px 20px 20px 20px;
-  width: 175px;
-  height: 190px;
   float: left;
+  width: 174px;
+  height: 162px;
 }
+
 .icone_tout_bleu {
   padding-top: 2px;
   padding-left: 10px;
@@ -654,15 +665,15 @@ aside {
 
 #vieux_port {
   background-color: white;
-  width: 250px;
-  height: 320x;
   padding-left: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-right: 5px;
   text-align: center;
   border-radius: 20px;
-  margin-left: 10px;
+  width: 356px;
+  margin-left: -9px;
+  height: 190px;
 }
 
 .texte_vieux_port {
