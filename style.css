@@ -43,7 +43,6 @@ header {
   display: flex;
   width: 1130px;
   margin-top: 40px;
-  padding-bottom: 20px;
 }
 
 /*Menu de navigation*/
@@ -52,7 +51,7 @@ nav ul {
   display: flex;
   flex-direction: row;
   margin-left: 20px;
-  margin-right: 22px;
+  margin-right: 0px;
   margin-bottom: 10px;
   margin-top: 65px;
   padding-left: 0px;
@@ -79,15 +78,15 @@ nav a:hover {
 /*Bloc slogan*/
 #slogan {
   width: 900px;
-  padding: 20px;
+  margin-left: 35px;
   margin-top: 5px;
-  margin-left: 20px;
+  margin-bottom: 5px;
 }
 .titre_slogan {
   width: 500px;
-  margin-bottom: 10.936px;
-  margin-top: 67.936px;
-  margin-left: -15px;
+  margin-bottom: 10px;
+  margin-top: 80px;
+  margin-left: -35px;
   height: 20px;
   text-align: left;
 }
@@ -96,7 +95,7 @@ nav a:hover {
   height: 20px;
   text-align: left;
   margin-bottom: 1px;
-  margin-left: -14px;
+  margin-left: -35px;
   width: 276px;
   margin-top: 8px;
 }
@@ -108,8 +107,8 @@ nav a:hover {
   width: 450px;
   height: 70px;
   margin-right: 50px;
-  margin-left: 26px;
-  margin-top: -5px;
+  margin-left: 0px;
+  margin-top: 14px;
   margin-bottom: -10px;
 }
 
@@ -157,7 +156,7 @@ nav a:hover {
   flex-direction: row;
   padding-top: 0px;
   padding-left: 0px;
-  margin-left: 61px;
+  margin-left: 60px;
 }
 
 .champ_saisie_economique {
@@ -170,8 +169,8 @@ nav a:hover {
 }
 
 .texte_filtre {
-  width: 104.267px;
-  margin-left: -33px;
+  width: 104px;
+  margin-left: -60px;
   margin-right: -18px;
 }
 
@@ -183,44 +182,18 @@ nav a:hover {
   background-color: white;
 }
 
-.fa-money-bill-wave {
-  color: #0065fc;
-  background-color: #deebff;
-  border-radius: 70px;
-  padding: 17px;
-  float: left;
-  text-align: center;
-  margin: -10px;
-}
-
-.fa-child {
-  color: #0065fc;
-  background-color: #deebff;
-  border-radius: 70px;
-  padding: 17px;
-  float: left;
-  text-align: center;
-  margin: -10px;
-}
-
-.fa-heart {
-  color: #0065fc;
-  background-color: #deebff;
-  border-radius: 70px;
-  padding: 17px;
-  float: left;
-  text-align: center;
-  margin: -10px;
-}
-
+.fa-money-bill-wave,
+.fa-child,
+.fa-heart,
 .fa-dog {
   color: #0065fc;
   background-color: #deebff;
-  border-radius: 70px;
-  padding: 17px;
-  float: left;
-  text-align: center;
   margin: -10px;
+  margin-top: -44px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  float: left;
 }
 
 /*bloc informatif nombre logements*/
@@ -230,7 +203,7 @@ nav a:hover {
 }
 
 .info_recherche {
-  margin-left: 10px;
+  margin-left: 11px;
   margin-top: 27px;
 }
 
@@ -241,8 +214,8 @@ nav a:hover {
   height: 15px;
   border: 2px #f2f2f2 solid;
   text-align: center;
-  margin-left: 23px;
-  padding: 9px;
+  margin-left: -4px;
+  padding: 8px;
   float: left;
 }
 
@@ -768,36 +741,14 @@ aside {
   background-attachment: fixed;
   background-color: rgb(242, 242, 242);
   background-repeat: no-repeat;
-  border-bottom-color: rgb(242, 242, 242);
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  border-bottom-style: solid;
-  border-bottom-width: 3px;
-  border-image-outset: 0;
-  border-image-repeat: stretch;
-  border-image-slice: 100%;
-  border-image-source: none;
-  border-image-width: 1;
-  border-left-color: rgb(242, 242, 242);
-  border-left-style: solid;
-  border-left-width: 3px;
-  border-right-color: rgb(242, 242, 242);
-  border-right-style: solid;
-  border-right-width: 3px;
-  border-top-color: rgb(242, 242, 242);
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  border-top-style: solid;
-  border-top-width: 3px;
-  height: 696px;
+  border: 3px rgb(242, 242, 242) solid;
+  border-radius: 15px;
+  width: 322px;
+  height: 690px;
   margin-left: 20px;
   margin-right: 20px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
+  padding: 0px;
   position: relative;
-  width: 313px;
 }
 
 #hotel_soleil {
@@ -1164,19 +1115,15 @@ footer {
 
 footer p {
   font-weight: bold;
-  
 }
 
-p.titre_footer
-
-{
-margin-left: 41px;
+p.titre_footer {
+  margin-left: 41px;
 }
 
 footer a {
   text-decoration: none;
   color: black;
-  
 }
 
 footer a:hover {
@@ -1190,7 +1137,6 @@ footer a:hover {
 #a_propos {
   flex: 0.5em;
   margin-left: 362px;
-  
 }
 
 #hebergements {
