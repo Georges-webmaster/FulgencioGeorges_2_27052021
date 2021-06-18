@@ -1,10 +1,10 @@
 /*Eléments principaux de la page*/
 
 /*Police personnalisée*/
-/*La police choisie est Light 300 et semi-bold 600*/
+/*Police Raleway choisie est Light 300 et semi-bold 600 */
 
 h2 {
-  font-family: "Raleway", sans-serif; /*selecteur universel*/
+  font-family: "Raleway", sans-serif;
   font-size: 1.2em;
   font-weight: bold;
 }
@@ -953,16 +953,14 @@ aside {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-between;
   margin-bottom: 20px;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  border: 3px #f2f2f2 solid;
   border-radius: 15px;
   margin-left: 20px;
   width: 1100px;
-  height: 439px;
+  height: 479px;
   margin-top: 40px;
   padding-top: 0px;
 }
@@ -1129,7 +1127,7 @@ aside {
 #parc_longchamp {
   background-color: white;
   padding-bottom: 0px;
-  padding-top: 0px;
+  margin-top: 8px;
   margin-left: 0px;
   border-radius: 20px;
   width: 250px;
@@ -1161,34 +1159,44 @@ footer {
   background-color: #f2f2f2;
   margin-top: 10px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer p {
+  font-weight: bold;
+  
+}
+
+p.titre_footer
+
+{
+margin-left: 41px;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+  
+}
+
+footer a:hover {
+  color: black;
 }
 
 .liste {
   list-style-type: none;
 }
 
-ul.liste {
-  text-decoration: none;
-  font-family: "Raleway", sans-serif;
-  font-size: 0.9em;
-}
-
-p.titre_footer {
-  font-family: "Raleway", sans-serif;
-  font-size: 0.9em;
-  font-weight: bold;
-}
-
 #a_propos {
-  width: 50%;
+  flex: 0.5em;
+  margin-left: 362px;
+  
 }
 
 #hebergements {
-  width: 50%;
+  flex: 0.5em;
 }
 
 #assistance {
-  width: 50%;
+  flex: 0.5em;
 }
