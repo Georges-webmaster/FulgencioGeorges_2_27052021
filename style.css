@@ -1,22 +1,14 @@
-/*Eléments principaux de la page*/
-
-/*Police personnalisée*/
-/*Police Raleway choisie est Light 300 et semi-bold 600 */
+* /*Police Raleway choisie est Light 300 et semi-bold 600 */ {
+  font-family: "Raleway", sans-serif;
+}
 
 h2 {
-  font-family: "Raleway", sans-serif;
   font-size: 1.2em;
   font-weight: bold;
 }
 
 p {
-  font-family: "Raleway", sans-serif;
   font-size: 0.9em;
-}
-
-button {
-  font-family: "Raleway", sans-serif;
-  font-weight: normal;
 }
 
 #bloc_page {
@@ -24,24 +16,11 @@ button {
   margin: auto;
 }
 
-#filtres p {
-  font-weight: bold;
-}
-
-.indication_slogan {
-  font-weight: normal;
-}
-
 /*header*/
 header {
   display: flex;
-  flex-direction: row;
-  height: 70px;
-}
-
-#logo_reservia {
-  display: flex;
-  width: 1130px;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 40px;
 }
 
@@ -49,15 +28,7 @@ header {
 nav ul {
   list-style-type: none;
   display: flex;
-  flex-direction: row;
-  margin-left: 20px;
-  margin-right: 0px;
-  margin-bottom: 10px;
-  margin-top: 65px;
-  padding-left: 0px;
-  padding-right: 0px;
-  width: 302.617px;
-  height: 32px;
+  padding: 0px;
 }
 
 nav li {
@@ -65,75 +36,45 @@ nav li {
 }
 
 nav a {
-  font-size: 1.3em;
+  font-size: 1em;
   text-decoration: none;
   color: #0065fc;
 }
 
 nav a:hover {
-  margin-top: 5px;
-  border-top: 3px solid #0065fc;
+  margin-top: 10px;
+  border-top: 2px solid #0065fc;
 }
 
 /*Bloc slogan*/
-#slogan {
-  width: 900px;
-  margin-left: 35px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-.titre_slogan {
-  width: 500px;
-  margin-bottom: 10px;
-  margin-top: 80px;
-  margin-left: -35px;
-  height: 20px;
-  text-align: left;
-}
-
-.complement_slogan {
-  height: 20px;
-  text-align: left;
-  margin-bottom: 1px;
-  margin-left: -35px;
-  width: 276px;
-  margin-top: 8px;
-}
 
 /*Bloc champ recherche*/
 #champ_recherche {
   display: flex;
-  flex-direction: row;
-  width: 450px;
-  height: 70px;
-  margin-right: 50px;
-  margin-left: 0px;
-  margin-top: 14px;
-  margin-bottom: -10px;
+  margin-bottom: 22px;
+}
+
+.champ_saisie {
+  flex: 0.2;
+  border: 2px solid #f2f2f2;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .fa-map-marker-alt {
   width: 40px;
-  height: 27px;
-  text-align: center;
+  height: 37px;
   background-color: #f2f2f2;
   border: 2px solid #f2f2f2;
   border-radius: 15px 0px 0px 15px;
-  padding-top: 10px;
-  margin-top: 1px;
-  margin-bottom: 1px;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
   cursor: pointer;
-}
-
-.champ_saisie {
-  width: 200px;
-  height: 35px;
-  border: 2px solid #f2f2f2;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-right: 0px;
-  margin-top: 1px;
-  margin-bottom: 1px;
 }
 
 .bouton_rechercher {
@@ -144,34 +85,14 @@ nav a:hover {
   border-radius: 0px 20px 20px 0px / 50px 15px 15px 0px;
   margin-top: 1px;
   margin-bottom: 1px;
-  box-sizing: border-box;
   color: white;
   font-weight: bold;
-  box-sizing: border-box;
 }
 
 /*Bloc filtres*/
 #filtres {
   display: flex;
-  flex-direction: row;
-  padding-top: 0px;
-  padding-left: 0px;
-  margin-left: 60px;
-}
-
-.champ_saisie_economique {
-  display: flex;
-  flex-direction: row;
-  width: 290px;
-  height: 40px;
-  margin-right: 5px;
-  margin-left: 1px;
-}
-
-.texte_filtre {
-  width: 104px;
-  margin-left: -60px;
-  margin-right: -18px;
+  justify-content: flex-start;
 }
 
 .bouton_filtre {
@@ -194,17 +115,14 @@ nav a:hover {
   height: 50px;
   border-radius: 25px;
   float: left;
+  line-height: 4;
+  text-align: center;
 }
 
 /*bloc informatif nombre logements*/
 #info_resultat_recherche {
   display: flex;
-  flex-direction: row;
-}
-
-.info_recherche {
-  margin-left: 11px;
-  margin-top: 27px;
+  justify-content: flex-start;
 }
 
 .fa-info {
@@ -214,65 +132,36 @@ nav a:hover {
   height: 15px;
   border: 2px #f2f2f2 solid;
   text-align: center;
-  margin-left: -4px;
   padding: 8px;
-  float: left;
 }
 
 /*Bloc central*/
+
 #bloc_central {
-  background-color: #ffffff;
   display: flex;
-  width: 1174px;
-  height: 705px;
 }
 
 /*bloc offre hébergement*/
 
-.bloc_hebergement {
-  background-color: #f2f2f2;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  border: 3px #f2f2f2 solid;
-  border-radius: 15px;
-  margin-left: 2%;
-  width: 755px;
-  height: 690px;
+section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-bottom: 40px;
-  padding-bottom: 0px;
+  background-color: #f2f2f2;
+  border: 3px #f2f2f2 solid;
+  border-radius: 15px;
 }
 
-.titre_hebergement {
-  font-family: "Raleway", sans-serif;
-  font-size: 19.2px;
-  font-weight: 700;
-  height: 31px;
-  margin-bottom: -40px;
-  margin-left: -66px;
-  margin-top: 40px;
-  padding-bottom: 0px;
-  padding-top: 0px;
-  text-align: left;
-  width: 650.617px;
+.titre_hebergement
+{
+  display: flex;
 }
 
 #offre_cannebiere {
   background-color: rgb(255, 255, 255);
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-radius: 20px;
   height: 223px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  margin-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
   width: 229px;
 }
 
@@ -281,20 +170,6 @@ nav a:hover {
   border-bottom-right-radius: 0px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  display: block;
-  font-family: "Raleway", sans-serif;
-  font-size: 14.4px;
-  font-weight: 400;
-  height: 130px;
-  margin-bottom: -18px;
-  margin-left: 5px;
-  margin-right: 2px;
-  margin-top: 3px;
-  padding-bottom: 2px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
-  text-align: left;
   width: 219px;
 }
 
@@ -709,12 +584,6 @@ nav a:hover {
 
 .lien_section {
   display: flex;
-  flex-direction: column;
-  width: 720px;
-  margin-left: -16px;
-  margin-top: -20.6px;
-  margin-bottom: 16.4px;
-  height: 22.8px;
   font-weight: bold;
 }
 
@@ -738,17 +607,13 @@ nav a:hover {
 }
 
 aside {
-  background-attachment: fixed;
   background-color: rgb(242, 242, 242);
-  background-repeat: no-repeat;
   border: 3px rgb(242, 242, 242) solid;
   border-radius: 15px;
-  width: 322px;
-  height: 690px;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding: 0px;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
 }
 
 #hotel_soleil {
@@ -757,16 +622,6 @@ aside {
   border-bottom-right-radius: 20px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  margin-bottom: 10px;
-  margin-left: 0px;
-  margin-top: 10px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
-  text-align: center;
-  height: 160px;
-  width: 300px;
 }
 
 .texte_soleil_matin {
@@ -782,15 +637,8 @@ aside {
 .image_soleil_matin {
   width: 150px;
   height: 150px;
-  padding-top: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  margin-right: 10px;
-  margin-bottom: 3px;
   border-radius: 20px 0px 0px 20px;
   float: left;
-  margin-top: 4px;
-  margin-left: 6px;
 }
 
 .icone_soleil_matin {
