@@ -46,8 +46,6 @@ nav a:hover {
   border-top: 2px solid #0065fc;
 }
 
-/*Bloc slogan*/
-
 /*Bloc champ recherche*/
 #champ_recherche {
   display: flex;
@@ -135,469 +133,71 @@ nav a:hover {
   padding: 8px;
 }
 
-/*Bloc central*/
+/*Bloc Hébergement et Plus populaire*/
 
-#bloc_central {
+#bloc_hebergement_populaire {
   display: flex;
 }
 
-/*bloc offre hébergement*/
+/*Bloc hébergement*/
 
 section {
+  background-color: #f2f2f2;
+  border: 3px solid;
+  border-radius: 15px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: #f2f2f2;
-  border: 3px #f2f2f2 solid;
+}
+
+.carte_hebergement {
+  background-color: #ffffff;
   border-radius: 15px;
 }
 
-.titre_hebergement
-{
-  display: flex;
+.image_hebergement {
+  border-radius: 15px 15px 0px 0px;
 }
 
-#offre_cannebiere {
-  background-color: rgb(255, 255, 255);
-  border-radius: 20px;
-  height: 223px;
-  width: 229px;
+.carte_hebergement_mer {
+  background-color: #ffffff;
+  border-radius: 15px;
 }
 
-.image_cannebiere {
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  width: 219px;
+.image_hebergement_mer {
+  border-radius: 15px 15px 0px 0px;
 }
 
-.texte_cannebiere_gras {
-  margin-top: 21.4px;
-  font-family: "Raleway", sans-serif;
-  margin-left: 10px;
-  margin-right: 2px;
-  margin-bottom: 0.4px;
-  padding-left: 0px;
-  padding-top: 0px;
-  text-align: left;
+.carte_hebergement_anima {
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+.image_hebergement_anima {
+  border-radius: 15px 15px 0px 0px;
+}
+
+.hebergement_texte_gras {
   font-weight: bold;
 }
 
-.texte_cannebiere {
-  font-family: "Raleway", sans-serif;
-  margin-left: 10px;
-  margin-right: 2px;
-  margin-bottom: 0.4px;
-  margin-top: 5.4px;
-  padding-left: 0px;
-  padding-top: 0px;
-  text-align: left;
-  font-size: 0.9em;
-}
-
-.icone-cannebiere {
-  color: rgb(0, 101, 252);
-  font-family: "Raleway", sans-serif;
-  font-size: 14.4px;
-  margin-left: 8px;
-  margin-top: 1.4px;
-  padding-left: 0px;
-  padding-top: 2px;
-  text-align: left;
-}
-
-#offre_hotel_port {
-  background-color: rgb(255, 255, 255);
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  height: 223px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  margin-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  width: 229px;
-}
-
-.image_hotel_port {
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  display: block;
-  font-family: "Raleway", sans-serif;
-  font-size: 14.4px;
-  font-weight: 400;
-  height: 130px;
-  margin-bottom: -18px;
-  margin-left: 5px;
-  margin-right: 2px;
-  margin-top: 3px;
-  padding-bottom: 2px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
-  text-align: left;
-  width: 219px;
-}
-
-.texte_hotel_port_gras {
-  margin-top: 21.4px;
-  font-family: "Raleway", sans-serif;
-  margin-left: 10px;
-  margin-right: 2px;
-  margin-bottom: 0.4px;
-  padding-left: 0px;
-  padding-top: 0px;
-  text-align: left;
-  font-weight: bold;
-}
-
-.texte_hotel_port {
-  font-family: "Raleway", sans-serif;
-  margin-left: 10px;
-  margin-right: 2px;
-  margin-bottom: 0.4px;
-  margin-top: 5.4px;
-  padding-left: 0px;
-  padding-top: 0px;
-  text-align: left;
-  font-size: 0.9em;
-}
-
-.icone_hotel_port {
-  padding-left: 0px;
-  margin-left: 9px;
-  margin-top: 1.4px;
-  margin-bottom: 15.4px;
-  padding-top: 0px;
-  text-align: left;
+.icone-hebergement {
   color: #0065fc;
-}
-
-#offre_hotel_mouette {
-  background-color: rgb(255, 255, 255);
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  height: 223px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  margin-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  width: 229px;
-}
-
-.image_mouette {
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  display: block;
-  font-family: "Raleway", sans-serif;
-  font-size: 14.4px;
-  font-weight: 400;
-  height: 130px;
-  margin-bottom: -18px;
-  margin-left: 5px;
-  margin-right: 2px;
-  margin-top: 3px;
-  padding-bottom: 2px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
   text-align: left;
-  width: 219px;
 }
 
-.texte_mouette_gras {
-  margin-top: 21.4px;
-  font-family: "Raleway", sans-serif;
-  margin-left: 10px;
-  margin-right: 2px;
-  margin-bottom: 0.4px;
-  padding-left: 0px;
-  padding-top: 0px;
-  text-align: left;
+.lien_afficher_plus {
   font-weight: bold;
 }
 
-.texte_mouette {
-  font-family: "Raleway", sans-serif;
-  margin-left: 10px;
-  margin-right: 2px;
-  margin-bottom: 0.4px;
-  margin-top: 5.4px;
-  padding-left: 0px;
-  padding-top: 0px;
-  text-align: left;
-  font-size: 0.9em;
-}
+/*Bloc Plus Populaire*/
 
-.icone_mouette {
-  color: rgb(0, 101, 252);
-  font-family: "Raleway", sans-serif;
-  font-size: 14.4px;
-  margin-left: 9px;
-  margin-top: 5.4px;
-  padding-left: 0px;
-  padding-top: 0px;
-  text-align: left;
-}
-
-#offre_hotel_mer {
-  background-color: rgb(255, 255, 255);
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  height: 223px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  margin-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  width: 229px;
-}
-
-.image_hotel_mer {
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  display: block;
-  font-family: "Raleway", sans-serif;
-  font-size: 14.4px;
-  font-weight: 400;
-  height: 130px;
-  margin-bottom: -18px;
-  margin-left: 5px;
-  margin-right: 2px;
-  margin-top: 3px;
-  padding-bottom: 2px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
-  text-align: left;
-  width: 219px;
-}
-.texte_hotel_mer_gras {
-  font-family: "Raleway", sans-serif;
-  font-size: 14.4px;
-  font-weight: 700;
-  height: 17px;
-  margin-bottom: 2.4px;
-  margin-left: 10px;
-  margin-right: 2px;
-  margin-top: 21.4px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-top: 0px;
-  text-align: left;
-  width: 141px;
-}
-.texte_hotel_mer {
-  font-family: "Raleway", sans-serif;
-  margin-left: 10px;
-  margin-right: 2px;
-  margin-bottom: 0.4px;
-  margin-top: 5.4px;
-  padding-left: 0px;
-  padding-top: 0px;
-  text-align: left;
-  font-size: 0.9em;
-}
-
-.icone_hotel_mer {
-  color: rgb(0, 101, 252);
-  font-family: "Raleway", sans-serif;
-  font-size: 14.4px;
-  margin-left: 9px;
-  margin-top: 5.4px;
-  padding-left: 0px;
-  padding-top: 0px;
-  text-align: left;
-}
-
-#offre_auberge_panier {
-  background-color: rgb(255, 255, 255);
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  height: 223px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  margin-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  width: 229px;
-}
-
-.image_auberge_panier {
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  display: block;
-  font-family: "Raleway", sans-serif;
-  font-size: 14.4px;
-  font-weight: 400;
-  height: 130px;
-  margin-bottom: -18px;
-  margin-left: 5px;
-  margin-right: 2px;
-  margin-top: 3px;
-  padding-bottom: 2px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
-  text-align: left;
-  width: 219px;
-}
-
-.texte_auberge_panier_gras {
-  font-family: "Raleway", sans-serif;
-  font-size: 14.4px;
-  font-weight: 700;
-  height: 17px;
-  margin-bottom: 2.4px;
-  margin-left: 10px;
-  margin-right: 2px;
-  margin-top: 21.4px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-top: 0px;
-  text-align: left;
-  width: 141px;
-}
-
-.texte_auberge_panier {
-  font-family: "Raleway", sans-serif;
-  margin-left: 10px;
-  margin-right: 2px;
-  margin-bottom: 0.4px;
-  margin-top: 5.4px;
-  padding-left: 0px;
-  padding-top: 0px;
-  text-align: left;
-  font-size: 0.9em;
-}
-
-.icone_auberge_panier {
-  color: rgb(0, 101, 252);
-  font-family: "Raleway", sans-serif;
-  font-size: 14.4px;
-  margin-left: 9px;
-  margin-top: 5.4px;
-  padding-left: 0px;
-  padding-top: 0px;
-  text-align: left;
-}
-
-#offre_hotel_amina {
-  background-color: rgb(255, 255, 255);
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  height: 223px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  margin-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  width: 229px;
-}
-
-.image_hotel_anima {
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  display: block;
-  font-family: "Raleway", sans-serif;
-  font-size: 14.4px;
-  font-weight: 400;
-  height: 130px;
-  margin-bottom: -18px;
-  margin-left: 5px;
-  margin-right: 2px;
-  margin-top: 3px;
-  padding-bottom: 2px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
-  text-align: left;
-  width: 219px;
-}
-
-.texte_hotel_anima_gras {
-  font-family: "Raleway", sans-serif;
-  font-size: 14.4px;
-  font-weight: 700;
-  height: 17px;
-  margin-bottom: 2.4px;
-  margin-left: 10px;
-  margin-right: 2px;
-  margin-top: 21.4px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-top: 0px;
-  text-align: left;
-  width: 141px;
-}
-
-.texte_hotel_anima {
-  font-family: "Raleway", sans-serif;
-  margin-left: 10px;
-  margin-right: 2px;
-  margin-bottom: 0.4px;
-  margin-top: 5.4px;
-  padding-left: 0px;
-  padding-top: 0px;
-  text-align: left;
-  font-size: 0.9em;
-}
-
-.icone_hotel_anima {
-  color: rgb(0, 101, 252);
-  font-family: "Raleway", sans-serif;
-  font-size: 14.4px;
-  margin-left: 9px;
-  margin-top: 5.4px;
-  padding-left: 0px;
-  padding-top: 0px;
-  text-align: left;
-}
-
-.lien_section {
+aside {
+  background-color: #f2f2f2;
+  border: 3px solid;
+  border-radius: 15px;
   display: flex;
-  font-weight: bold;
-}
-
-/*Bloc complémentaire informatif aside*/
-
-.titre_populaire {
-  font-family: "Raleway", sans-serif;
-  font-size: 19.2px;
-  font-weight: 700;
-  margin-bottom: 16px;
-  margin-left: 8px;
-  margin-top: 39px;
-  padding-bottom: 0px;
-  padding-top: 0px;
+  flex-direction: column;
 }
 
 .fa-chart-line {
@@ -606,162 +206,49 @@ section {
   margin-right: 19px;
 }
 
-aside {
-  background-color: rgb(242, 242, 242);
-  border: 3px rgb(242, 242, 242) solid;
+.carte_populaire {
+  background-color: #ffffff;
   border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
 }
 
-#hotel_soleil {
-  background-color: rgb(255, 255, 255);
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+.image_populaire {
+  border-radius: 15px 15px 0px 0px;
 }
 
-.texte_soleil_matin {
-  padding-left: 0px;
-  width: 257px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  margin-top: 0.4px;
-  margin-bottom: 10.4px;
-  text-align: left;
+.carte_populaire_bleu_blanc {
+  background-color: #ffffff;
+  border-radius: 15px;
 }
 
-.image_soleil_matin {
-  width: 150px;
-  height: 150px;
-  border-radius: 20px 0px 0px 20px;
-  float: left;
+.image_populaire_bleu_blanc {
+  border-radius: 15px 15px 0px 0px;
 }
 
-.icone_soleil_matin {
-  padding-top: 2px;
-  padding-left: 10px;
-  text-align: left;
-  color: #0065fc;
+.texte_populaire_gras {
+  font-weight: bold;
 }
 
-#coeur_eau {
-  background-color: rgb(255, 255, 255);
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  margin-bottom: 10px;
-  margin-left: 0px;
-  margin-top: 10px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
-  text-align: center;
-  height: 160px;
-  width: 300px;
-}
-
-.texte_coeur_eau {
-  padding-left: 0px;
-  width: 257px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  margin-top: 0.4px;
-  margin-bottom: 10.4px;
-  text-align: left;
-}
-
-.image_coeur_eau {
-  width: 150px;
-  height: 150px;
-  padding-top: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  margin-right: 10px;
-  margin-bottom: 3px;
-  border-radius: 20px 0px 0px 20px;
-  float: left;
-  margin-top: 4px;
-  margin-left: 6px;
-}
-
-.icone_coeur_eau {
-  padding-top: 2px;
-  padding-left: 10px;
-  text-align: left;
-  color: #0065fced;
-}
-
-#tout_bleu {
-  background-color: rgb(255, 255, 255);
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  margin-bottom: 10px;
-  margin-left: 0px;
-  margin-top: 10px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
-  text-align: center;
-  height: 160px;
-  width: 300px;
-}
-
-.texte_tout_bleu {
-  padding-left: 0px;
-  width: 257px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  margin-top: 0.4px;
-  margin-bottom: 10.4px;
-  text-align: left;
-}
-
-.image_tout_bleu {
-  width: 150px;
-  height: 150px;
-  padding-top: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  margin-right: 10px;
-  margin-bottom: 3px;
-  border-radius: 20px 0px 0px 20px;
-  float: left;
-  margin-top: 4px;
-  margin-left: 6px;
-}
-
-.icone_tout_bleu {
-  padding-top: 2px;
-  padding-left: 10px;
-  text-align: left;
+.icone_populaire {
   color: #0065fc;
 }
 
 /*Bloc activité*/
-
 #bloc_activite {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  margin-bottom: 20px;
+  flex-direction: row;
   background-color: #ffffff;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
   border-radius: 15px;
-  margin-left: 20px;
-  width: 1100px;
-  height: 479px;
-  margin-top: 40px;
+  margin: auto;
+}
+
+.image_activité {
+  width: 250px;
+  padding-left: 0px;
   padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  height: 180px;
+  border-radius: 20px 20px 0px 0px;
 }
 
 .activite_titre {
@@ -794,16 +281,6 @@ aside {
   margin-left: 9px;
 }
 
-.image_vieux_port {
-  padding-left: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-right: 0px;
-  border-radius: 20px 20px 0px 0px;
-  width: 250px;
-  height: 335px;
-}
-
 #fort_pomegues {
   background-color: white;
   padding-bottom: 0px;
@@ -824,16 +301,6 @@ aside {
   margin-top: -4.6px;
 }
 
-.image_fort_pomegues {
-  width: 250px;
-  padding-left: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-right: 0px;
-  height: 180px;
-  border-radius: 20px 20px 0px 0px;
-}
-
 #ile_frioul {
   background-color: white;
   width: 250px;
@@ -851,16 +318,6 @@ aside {
   text-align: left;
   font-weight: bold;
   margin-top: -4.6px;
-}
-
-.image_ile_frioul {
-  width: 250px;
-  height: 73px;
-  padding-left: 0px;
-  padding-bottom: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  border-radius: 20px 20px 0px 0px;
 }
 
 #calanques {
@@ -913,16 +370,6 @@ aside {
   font-weight: bold;
 }
 
-.image_notre_dame {
-  width: 250px;
-  padding-left: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-right: 0px;
-  height: 180px;
-  border-radius: 20px 20px 0px 0px;
-}
-
 #parc_longchamp {
   background-color: white;
   padding-bottom: 0px;
@@ -940,16 +387,6 @@ aside {
   padding-left: 10px;
   text-align: left;
   font-weight: bold;
-}
-
-.image_parc_longchamp {
-  width: 250px;
-  padding-left: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-right: 0px;
-  height: 180px;
-  border-radius: 20px 20px 0px 0px;
 }
 
 /*bloc footer*/
