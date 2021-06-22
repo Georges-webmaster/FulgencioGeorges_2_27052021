@@ -21,9 +21,9 @@
   <body>
     <div id="bloc_page">
       <header>
-        <div>
-          <img src="images/logo-entreprise-reservia.png"Logo entreprise
-          Reservia"/>
+        <div> 
+          <a href="#"><img src="images/logo-entreprise-reservia.png" alt="Logo entreprise
+          Reservia" class="logo_reservia"></a>
         </div>
         <nav>
           <ul>
@@ -84,18 +84,19 @@
           cette ville
         </p>
       </div>
-      <h2 class="titre_hebergement">Hébergement à Marseille</h2>
       <div id="bloc_hebergement_populaire">
         <section>
-          <div class="carte_hebergement">
-            <img
+          <h2 class="titre_hebergement">Hébergement à Marseille</h2>
+          <div class="hebergement_disposition">
+                    <div
+           class="carte_hebergement">
+            <a href="#"><img
               src="images/auberge-la-cannebiere-marseille.jpg"
               alt="Auberge de la Cannebiere Marseille"
-              class="image_hebergement"
-            />
+              class="image_hebergement"/></a>            
             <p class="hebergement_texte_gras">Auberge la Cannebiere</p>
             <p>Nuit à partir de 25€</p>
-            <p class="icone-hebergement">
+            <p>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -183,13 +184,21 @@
               <i class="fas fa-star"></i>
             </p>
           </div>
+          </div>
+            <div class="lien_hebergement">
+              <p><a href="#"></a>Afficher plus</p>
+            </div>
         </section>
 
         <aside class="bloc_plus_polulaire">
           <h2 class="titre_populaire">
-            Les plus populaires<i class="fas fa-chart-line"></i>
-          </h2>
-          <div class="carte_populaire">
+            Les plus populaires
+          </h2>  
+          <span><i class="fas fa-chart-line"></i></span>
+          
+          <div id="populaire_disposition">
+
+                <div class="carte_populaire">
             <img
               src="images/hotel-le-soleil-matin-marseille.jpg"
               alt="Hôtel Le Soleil du Matin Versailles"
@@ -239,9 +248,9 @@
               <i class="far fa-star"></i>
             </p>
           </div>
+          </div>
         </aside>
       </div>
-      <p class="lien_afficher_plus">Afficher plus</p>
       <div>
         <h2 class="activite_titre">Activités à Marseille</h2>
       </div>
