@@ -143,6 +143,7 @@ nav a:hover {
 #bloc_hebergement_populaire {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .fa-star {
@@ -151,9 +152,22 @@ nav a:hover {
 
 /*Bloc hébergement*/
 
-.titre_hebergement {
+section {
+  background-color: #f2f2f2;
+  border: 3px solid;
+  border-radius: 15px;
   display: flex;
   flex-direction: row;
+}
+
+.test_colonne {
+  display: flex;
+  flex-direction: row;
+}
+
+.titre_hebergement {
+  display: flex;
+  flex-direction:row;
 }
 
 .lien_hebergement {
@@ -166,22 +180,14 @@ section {
   border: 3px solid;
   border-radius: 15px;
   display: flex;
-  flex-direction: column;
-}
-
-.hebergement_disposition {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
 }
 
 .carte_hebergement {
-  width: 28%;
+  width: 130%;
   height: 207px;
   background-color: #ffffff;
   border-radius: 15px;
+  border: 3px solid white;
 }
 
 .image_hebergement {
@@ -192,10 +198,11 @@ section {
 }
 
 .carte_hebergement_mer {
-  height: 220px;
-  width: 30%;
+  width: 130%;
+  height: 207px;
   background-color: #ffffff;
   border-radius: 15px;
+  border: 3px solid white;
 }
 
 .image_hebergement_mer {
@@ -208,15 +215,16 @@ section {
 .carte_hebergement_anima {
   background-color: #ffffff;
   border-radius: 15px;
-  width: 35%;
-  height: 280px;
+  border: 3px solid white;
+  width: 130%;
+  height: 207px;
 }
 
 .image_hebergement_anima {
   border-radius: 15px 15px 0px 0px;
   object-fit: cover;
   width: 100%;
-  height: 137px;
+  height: 92px;
 }
 
 .hebergement_texte_gras {
@@ -234,11 +242,16 @@ aside {
   border: 3px solid;
   border-radius: 15px;
   display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-left: 15px;
+  justify-content: center;
 }
 
 .titre_populaire {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
 }
 
 aside span .fa-chart-line {
@@ -246,11 +259,6 @@ aside span .fa-chart-line {
   flex-direction: row;
   justify-content: flex-end;
   font-size: 1em;
-}
-
-#populaire_disposition {
-  display: flex;
-  flex-direction: column;
 }
 
 .fa-chart-line {
@@ -266,11 +274,17 @@ aside span .fa-chart-line {
   height: 210px;
 }
 
-.image_populaire {
-  width: 35%;
-  height: 163px;
+.img_populaire
+{
+display: flex;
+align-items: flex-start;
   border-radius: 15px 15px 0px 0px;
   object-fit: cover;
+}
+
+.img_populaire .contenu_populaire
+{
+ padding: 10px; 
 }
 
 .carte_populaire_bleu_blanc {
@@ -283,10 +297,6 @@ aside span .fa-chart-line {
   height: 117px;
   border-radius: 15px 15px 0px 0px;
   object-fit: cover;
-}
-
-.carte_populaire p {
-  text-align: right;
 }
 
 .texte_populaire_gras {
