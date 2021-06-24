@@ -154,55 +154,36 @@ nav a:hover {
 
 section {
   background-color: #f2f2f2;
-  border: 3px solid;
+  border: 3px #af3d3d solid;
   border-radius: 15px;
   display: flex;
-  flex-direction: row;
+  flex-direction:column;
+  justify-content: center;
 }
 
-.test_colonne {
+.disposition_hebergement
+{
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
 }
 
-.titre_hebergement {
-  display: flex;
-  flex-direction:row;
-}
-
-.lien_hebergement {
-  display: flex;
-  flex-direction: row;
-}
-
-section {
-  background-color: #f2f2f2;
-  border: 3px solid;
-  border-radius: 15px;
-  display: flex;
-}
-
-.carte_hebergement {
-  width: 130%;
-  height: 207px;
+.media_hebergement
+{
+width: 30%;
+height: 215px;
   background-color: #ffffff;
   border-radius: 15px;
   border: 3px solid white;
 }
 
-.image_hebergement {
-  width: 100%;
-  height: 93px;
+.img_hebergement img
+{
+width: 100%;
+height: 100px;
   border-radius: 15px 15px 0px 0px;
   object-fit: cover;
-}
-
-.carte_hebergement_mer {
-  width: 130%;
-  height: 207px;
-  background-color: #ffffff;
-  border-radius: 15px;
-  border: 3px solid white;
 }
 
 .image_hebergement_mer {
@@ -210,14 +191,6 @@ section {
   object-fit: cover;
   width: 100%;
   height: 92px;
-}
-
-.carte_hebergement_anima {
-  background-color: #ffffff;
-  border-radius: 15px;
-  border: 3px solid white;
-  width: 130%;
-  height: 207px;
 }
 
 .image_hebergement_anima {
@@ -235,7 +208,7 @@ section {
   font-weight: bold;
 }
 
-/*Bloc Plus Populaire*/
+/*Bloc Les Plus Populaire*/
 
 aside {
   background-color: #f2f2f2;
@@ -243,60 +216,47 @@ aside {
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  width: 30%;
   margin-left: 15px;
-  justify-content: center;
+  justify-content: space-around;
+align-items: center;
 }
 
-.titre_populaire {
+.title_populaire
+{
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-around;
+
 }
 
-aside span .fa-chart-line {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  font-size: 1em;
+.title_populaire h2
+{
+margin-top: 0px;
+margin-bottom: 0px;
 }
 
-.fa-chart-line {
-  float: right;
-  margin-left: 20px;
-  margin-right: 19px;
+.fa-chart-line
+{
+  font-size: 1.5em;
 }
 
-.carte_populaire {
-  background-color: #ffffff;
-  border-radius: 15px;
-  width: 99%;
-  height: 210px;
-}
 
-.img_populaire
+.media_populaire
 {
 display: flex;
 align-items: flex-start;
-  border-radius: 15px 15px 0px 0px;
-  object-fit: cover;
+width: 85%;
+background-color: #ffffff;
+border-radius: 15px;
+margin-left: 20px;
+margin-right: 20px;
 }
 
-.img_populaire .contenu_populaire
+.img_populaire img
 {
- padding: 10px; 
-}
-
-.carte_populaire_bleu_blanc {
-  background-color: #ffffff;
-  border-radius: 15px;
-}
-
-.image_populaire_bleu_blanc {
-  width: 27%;
-  height: 117px;
-  border-radius: 15px 15px 0px 0px;
-  object-fit: cover;
+border-radius: 15px 0px 0px 15px;
+object-fit: cover;
+width: 52%;
+height: 140px;
 }
 
 .texte_populaire_gras {
@@ -305,11 +265,9 @@ align-items: flex-start;
 
 /*Bloc activité*/
 #bloc_activite {
-  display: flex;
-  flex-direction: row;
-  background-color: #ffffff;
+  background-color: #ffffff 3px solid;
   border-radius: 15px;
-  margin: auto;
+  border: blue 3px solid;
 }
 
 .image_activité {
