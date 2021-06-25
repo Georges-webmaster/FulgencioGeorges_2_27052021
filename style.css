@@ -12,8 +12,13 @@ p {
 }
 
 #bloc_page {
-  width: 62%;
-  margin: auto;
+display: flex;
+flex-direction: column;
+margin: 300px;
+margin-top: 40px;
+margin-left: 300px;
+margin-right: 300px;
+margin-bottom: 0px;
 }
 
 /*header*/
@@ -142,8 +147,6 @@ nav a:hover {
 
 #bloc_hebergement_populaire {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 .fa-star {
@@ -157,8 +160,20 @@ section {
   border: 3px #f2f2f2 solid;
   border-radius: 15px;
   display: flex;
-  flex-direction:column;
-  justify-content: center;
+}
+
+.test_one
+{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.line_hebergement
+{
+display: flex;
+flex-direction: row;  
+flex-wrap: wrap;
 }
 
 section h2
@@ -166,20 +181,13 @@ section h2
   margin: 20px;
 }
 
-section .lien_hebergement
+section a
 {
   margin: 20px;
   text-decoration: none;
   font-weight: bold;
 }
 
-.disposition_hebergement
-{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: space-around;
-}
 
 .media_hebergement
 {
@@ -193,8 +201,8 @@ section .lien_hebergement
 
 .img_hebergement img
 {
-width: 100%;
-height: 100px;
+  width: 100%;
+  height: 100px;
   border-radius: 15px 15px 0px 0px;
   object-fit: cover;
 }
