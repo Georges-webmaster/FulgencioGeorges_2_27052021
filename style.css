@@ -154,11 +154,23 @@ nav a:hover {
 
 section {
   background-color: #f2f2f2;
-  border: 3px #af3d3d solid;
+  border: 3px #f2f2f2 solid;
   border-radius: 15px;
   display: flex;
   flex-direction:column;
   justify-content: center;
+}
+
+section h2
+{
+  margin: 20px;
+}
+
+section .lien_hebergement
+{
+  margin: 20px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .disposition_hebergement
@@ -171,8 +183,9 @@ section {
 
 .media_hebergement
 {
-width: 30%;
-height: 215px;
+  width: 30%;
+  height: 215px;
+  margin: 10px;
   background-color: #ffffff;
   border-radius: 15px;
   border: 3px solid white;
@@ -212,33 +225,25 @@ height: 100px;
 
 aside {
   background-color: #f2f2f2;
-  border: 3px solid;
+  border: 3px #f2f2f2 solid;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
   margin-left: 15px;
   justify-content: space-around;
-align-items: center;
+  align-items: center;
 }
 
 .title_populaire
 {
   display: flex;
-  justify-content: space-around;
-
-}
-
-.title_populaire h2
-{
-margin-top: 0px;
-margin-bottom: 0px;
+  align-items: center;
 }
 
 .fa-chart-line
 {
   font-size: 1.5em;
 }
-
 
 .media_populaire
 {
@@ -264,159 +269,81 @@ height: 140px;
 }
 
 /*Bloc activité*/
-#bloc_activite {
+#box_activity{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   background-color: #ffffff 3px solid;
   border-radius: 15px;
-  border: blue 3px solid;
+  height: 425px;
+  padding: 10px;
 }
 
-.image_activité {
+.media_activite_hauteur
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 395px;
   width: 250px;
-  padding-left: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-right: 0px;
-  height: 180px;
-  border-radius: 20px 20px 0px 0px;
+  margin: 10px;
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  box-shadow: 15px 5px 5px #f2f2f2;
 }
 
-.activite_titre {
-  width: 700px;
-  height: 20px;
-  margin-right: 0px;
-  margin-left: 21px;
-  margin-top: 25px;
+.img_hauteur img
+{
+width: 100%;
+height: 340px;
+object-fit: cover;
+border-radius: 15px 15px 0px 0px;
 }
 
-#vieux_port {
-  background-color: white;
-  border-radius: 20px;
-  margin-left: -3px;
-  height: 390px;
+.media_activite_largeur
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #ffffff;
+  height: 160px;
   width: 250px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
   box-shadow: 10px 5px 5px #f2f2f2;
+  margin: 10px;
 }
 
-.texte_vieux_port {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  text-align: left;
-  font-weight: bold;
-  margin-left: 9px;
+.deux_colonnes
+{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
 }
 
-#fort_pomegues {
-  background-color: white;
-  padding-bottom: 0px;
-  padding-top: 0px;
-  margin-left: 0px;
-  border-radius: 20px;
-  width: 250px;
-  margin-left: 10px;
-  height: 230px;
-}
-
-.texte_fort_pomegues {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  text-align: left;
-  font-weight: bold;
-  margin-top: -4.6px;
-}
-
-#ile_frioul {
-  background-color: white;
-  width: 250px;
+.img_largeur img {
+  width: 100%;
   height: 110px;
-  margin-top: 10px;
-  margin-bottom: 64px;
-  margin-left: 10px;
-  border-radius: 20px;
-}
-
-.texte_ile_frioul {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  text-align: left;
-  font-weight: bold;
-  margin-top: -4.6px;
-}
-
-#calanques {
-  background-color: white;
-  border-radius: 20px;
-  margin-left: -3px;
-  height: 390px;
-  width: 250px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  box-shadow: 10px 5px 5px #f2f2f2;
-}
-
-.texte_parc_calanques {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  text-align: left;
-  font-weight: bold;
-}
-
-.image_parc_national_calanques {
-  padding-left: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-right: 0px;
   border-radius: 20px 20px 0px 0px;
-  width: 250px;
-  height: 335px;
+  object-fit: cover;
 }
 
-#notre_dame {
-  background-color: white;
-  padding-bottom: 0px;
-  padding-top: 0px;
-  margin-left: 0px;
-  border-radius: 20px;
-  width: 250px;
-  margin-left: 10px;
-  height: 230px;
+.img_largeur_frioul img
+{
+  width: 100%;
+  height: 85px;
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
 }
 
-.texte_notre_dame {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  text-align: left;
-  font-weight: bold;
+.media_activite_largeur_frioul
+{
+background-color: #ffffff;
+height: 135px;
+width: 250px;
+box-shadow: 10px 5px 5px #f2f2f2;
+padding: 10px;
+margin: 10px;
 }
 
-#parc_longchamp {
-  background-color: white;
-  padding-bottom: 0px;
-  margin-top: 8px;
-  margin-left: 0px;
-  border-radius: 20px;
-  width: 250px;
-  margin-left: 10px;
-  height: 230px;
-}
-
-.texte_parc_longchamp {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  text-align: left;
-  font-weight: bold;
-}
 
 /*bloc footer*/
 
