@@ -19,25 +19,17 @@
   </head>
 
   <body>
-    <div id="bloc_page">
+    
       <header>
         <div>
-          <a href="#"
-            ><img
-              src="images/logo-entreprise-reservia.png"
-              alt="Logo entreprise
-          Reservia"
-              class="logo_reservia"
-          /></a>
+          <a href="#">
+            <img src="images/logo-entreprise-reservia.png" alt="Logo entreprise
+              Reservia" class="logo_reservia"/></a>
         </div>
         <nav>
-          <ul>
-            <li><a href="#hebergement">Hébergements</a></li>
-            <!--Proposition nom d'ancre pointage Hébergement-->
-            <li><a href="#activité"> Activités</a></li>
-            <!--Proposition nom d'ancre pointage Activité-->
-            <li><a href="#">S'inscrire</a></li>
-          </ul>
+           <a href="#hebergement">Hébergements</a>   <!--Ancre pointage vers Hébergement-->
+           <a href="#activite"> Activités</a>  <!--Ancre pointage Activité-->
+            <a href="#">S'inscrire</a>
         </nav>
       </header>
 
@@ -45,56 +37,48 @@
       <p>En plein centre ville ou en pleine nature</p>
 
       <div id="champ_recherche">
-        <i class="fas fa-map-marker-alt"></i>
-        <input
-          type="text"
-          name="ville"
-          placeholder="Marseille, France"
-          class="champ_saisie"
-        />
-        <button type="submit" class="bouton_rechercher">Rechercher</button>
+        <span><i class="fas fa-map-marker-alt"></i></span>
+        <input type="text" name="ville" placeholder="Marseille, France"/>
+        <button type="submit">Rechercher</button>
       </div>
 
       <div id="filtres">
-        <p class="texte_filtre">Filtres</p>
-        <div class="champ_saisie_economique">
-          <button type="button" class="bouton_filtre">
+        <p class="text_filter">Filtres</p>
+        <div class="flitres_button">
+          <button type="button">
             <p>Économique</p>
             <i class="fas fa-money-bill-wave"></i>
           </button>
-        </div>
-        <div class="champ_saisie_economique">
-          <button type="button" class="bouton_filtre">
+             
+          <button type="button">
             <p>Familial</p>
             <i class="fas fa-child"></i>
           </button>
-        </div>
-        <div class="champ_saisie_economique">
-          <button type="button" class="bouton_filtre">
+        
+          <button type="button">
             <p>Romantique</p>
             <i class="fas fa-heart"></i>
           </button>
-        </div>
-        <div class="champ_saisie_economique">
-          <button type="button" class="bouton_filtre">
+    
+          <button type="button" class="button_animals">
             <p>Animaux autorisés</p>
             <i class="fas fa-dog"></i>
           </button>
         </div>
       </div>
 
-      <div id="info_resultat_recherche">
-        <p>
-          <i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans
-          cette ville
-        </p>
+      <div id="result_search">
+     <span><i class="fas fa-info"></i></span>
+     <p>Plus de 500 logements sont disponibles dans
+          cette ville</p>
       </div>
 
       <div id="bloc_hebergement_populaire">
-        <section class="test_one">
+        <section id="hebergement">
           <h2 class="title_hebergement">Hébergement à Marseille</h2>
 
-          <div class="line_hebergement">
+          <div class="line_first_hebergement">
+          
             <div class="media_hebergement">
               <div class="img_hebergement">
                 <img
@@ -160,7 +144,7 @@
             </div>
           </div>
 
-          <div class="line_hebergement">
+          <div class="line_second_hebergement">
             <div class="media_hebergement">
               <div class="img_hebergement">
                 <img
@@ -237,11 +221,10 @@
           </div>
 
           <div class="media_populaire">
-            <div class="img_populaire">
+            <div class="img_one_large">
               <img
                 src="images/hotel-le-soleil-matin-marseille.jpg"
-                alt="Hôtel Le Soleil du Matin Marseille"
-              />
+                alt="Hôtel Le Soleil du Matin Marseille"/>
             </div>
             <div class="content_populaire">
               <p class="texte_populaire_gras">Hôtel Le soleil du matin</p>
@@ -257,7 +240,7 @@
           </div>
 
           <div class="media_populaire">
-            <div class="img_populaire">
+            <div class="img_second_large">
               <img
                 src="images/coeur-eau-chambres-hotes-marseille.jpg"
                 alt="Au coeur de l'eau Chambres hôtes Marseille"
@@ -279,7 +262,7 @@
           </div>
 
           <div class="media_populaire">
-            <div class="img_populaire">
+            <div class="img_height">
               <img
                 src="images/hotel-tout-bleu-et-blanc-marseille.jpg"
                 alt="Hôtel Tout bleu et Blanc Marseille"
@@ -303,8 +286,7 @@
       <div>
         <h2 class="activite_titre">Activités à Marseille</h2>
       </div>
-
-      <div id="box_activity">
+      <div id="activite" class="box_activity">
         <div class="media_activite_hauteur">
           <div class="img_hauteur">
             <img
@@ -382,10 +364,10 @@
           </div>
         </div>
       </div>
-    </div>
+    
 
-    <footer class="pied_page">
-      <div id="a_propos">
+    <footer>
+      <div class="colonne_footer">
         <p class="titre_footer">A propos</p>
         <ul class="liste">
           <li><a href="#">Fonctionnement du site</a></li>
@@ -393,14 +375,14 @@
           <li><a href="#">Données et confidentialités</a></li>
         </ul>
       </div>
-      <div id="hebergements">
+      <div class="colonne_footer">
         <p class="titre_footer">Nos hébergements</p>
         <ul class="liste">
           <li><a href="#">Charte qualité</a></li>
           <li><a href="#">Soumettre votre hôtel</a></li>
         </ul>
       </div>
-      <div id="assistance">
+      <div class="colonne_footer">
         <p class="titre_footer">Assistance</p>
         <ul class="liste">
           <li><a href="#">Centre d'aide</a></li>
