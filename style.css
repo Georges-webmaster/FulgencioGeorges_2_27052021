@@ -7,15 +7,21 @@ h2 {
   font-weight: bold;
 }
 
-p,
-a {
+p, ul, li {
   font-size: 0.9em;
 }
 
+/*Bloc page*/
+
 body {
-  display: flex;
-  flex-direction: column;
-  margin: 5%;
+  margin: 0;
+}
+
+#bloc_page {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
 }
 
 /*header et nav*/
@@ -32,9 +38,39 @@ header {
 
 /*Menu de navigation*/
 
-nav a {
-  text-decoration: none;
+nav {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_bar a {
   color: #0065fc;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav_bar a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  background: #0065fc;
+  transition: width 0.2s ease-in-out;
+  top: -50px;
+}
+
+.nav_bar a:hover:after {
+  width: 100%;
+}
+
+.text_bold {
+  font-weight: bold;
+}
+
+.text_grey {
+  color: inherit;
 }
 
 /*Bloc champ recherche*/
@@ -50,14 +86,17 @@ nav a {
   background-color: #f2f2f2;
   border: 2px solid #f2f2f2;
   border-radius: 15px 0px 0px 15px;
+  padding-left: 3px;
+  margin-right: -2px;
   text-align: center;
-  cursor: pointer;
   line-height: 2;
+  font-size: 1em;
 }
 #champ_recherche input {
   border: 2px solid #f2f2f2;
   width: 200px;
   height: 40px;
+  cursor: pointer;
 }
 
 #champ_recherche button {
@@ -68,6 +107,7 @@ nav a {
   border-radius: 0px 20px 20px 0px / 50px 15px 15px 0px;
   color: white;
   font-weight: bold;
+  cursor: pointer;
 }
 
 /*Bloc filtres*/
@@ -82,12 +122,7 @@ nav a {
   font-weight: bold;
 }
 
-.text_filter {
-  margin-right: 20px;
-  font-weight: bold;
-}
-
-#filtres button {
+filtres button {
   width: 180px;
   height: 45px;
   margin-right: 20px;
@@ -96,25 +131,37 @@ nav a {
   background-color: white;
 }
 
+.btn {
+  background-color: #ffffff;
+  border: 2px solid #f2f2f2;
+  border-radius: 30px;
+  line-height: 0.5;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0065fc;
+  color: #ffffff;
+}
+
 #filtres i {
+  float: left;
   color: #0065fc;
   background-color: #deebff;
-  margin: -10px;
-  margin-top: -44px;
   width: 46px;
   height: 46px;
   border-radius: 23px;
-  float: left;
-  line-height: 40px;
-}
-
-.button_animals {
-  width: 200px;
-  height: 45px;
-  margin-right: 20px;
-  border-radius: 20px;
-  border: 2px solid #f2f2f2;
-  background-color: white;
+  line-height: 46px;
+  font-size: 1.3em;
+  margin-top: -23px;
+  margin-left: -15px;
+  margin-right: 12px;
 }
 
 /*bloc résultat*/
@@ -127,17 +174,18 @@ nav a {
 #result_search span {
   color: #0065fc;
   border: 2px #f2f2f2 solid;
-  width: 24px;
-  height: 24px;
-  border-radius: 12px;
+  width: 26px;
+  height: 26px;
+  border-radius: 26px;
   text-align: center;
-  line-height: 22px;
-  font-size: 0.9em;
+  line-height: 24px;
+  margin-right: -5px;
 }
 
 #result_search p {
   margin-left: 10px;
-  margin-top: 10px;
+  margin-top: 9px;
+  margin-bottom: 25px;
 }
 
 /*Bloc Hébergement et Plus populaire*/
@@ -158,26 +206,36 @@ section {
   display: flex;
   flex-direction: column;
   width: 70%;
-  max-width: 850px;
+  height: 595px;
+}
+
+.cards_text_bold,
+.hebergement_link {
+  font-weight: bold;
+}
+
+.title_hebergement,
+.hebergement_link {
+  margin-left: 35px;
+}
+
+.content_hebergement {
+  margin-left: 20px;
+  line-height: 12px;
 }
 
 .line_first_hebergement {
   display: flex;
   justify-content: space-around;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .line_second_hebergement {
   display: flex;
-}
-
-section h2 {
-  margin: 20px;
-}
-
-section a {
-  margin: 20px;
-  text-decoration: none;
-  font-weight: bold;
+  justify-content: space-around;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .media_hebergement {
@@ -210,12 +268,11 @@ section a {
   height: 92px;
 }
 
-.hebergement_texte_gras {
-  font-weight: bold;
-}
-
-.lien_afficher_plus {
-  font-weight: bold;
+.links-cards {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000000;
+  font-size: 1em;
 }
 
 /*Bloc Les Plus Populaire*/
@@ -235,11 +292,16 @@ aside {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 400px;
+  width: 360px;
+}
+
+.title_populaire h2 {
+  margin-top: 5px;
 }
 
 .fa-chart-line {
   font-size: 1.5em;
+  margin-top: -11px;
 }
 
 .media_populaire {
@@ -261,19 +323,40 @@ aside {
 .img_second_large img {
   border-radius: 15px 0px 0px 15px;
   object-fit: cover;
-  width: 72%;
+  width: 71%;
   height: 150px;
 }
 
 .img_height img {
   border-radius: 15px 0px 0px 15px;
   object-fit: cover;
-  width: 125%;
+  width: 118%;
   height: 150px;
 }
 
-.texte_populaire_gras {
-  font-weight: bold;
+.content_populaire_one {
+  margin-left: -88px;
+  margin-right: 23px;
+  line-height: 15px;
+  margin-top: -7px;
+}
+
+.content_populaire_two {
+  margin-left: -30px;
+  margin-right: 23px;
+  line-height: 15px;
+  margin-top: -7px;
+}
+
+.content_populaire_three {
+  margin-left: 35px;
+  margin-right: 12px;
+  line-height: 15px;
+  margin-top: -7px;
+}
+
+aside span i {
+  margin-top: 40px;
 }
 
 /*Bloc activité*/
@@ -281,10 +364,8 @@ aside {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: #ffffff 3px solid;
-  border-radius: 15px;
+  align-content: space-between;
   height: 425px;
-  padding: 10px;
 }
 
 .media_activite_hauteur {
@@ -294,7 +375,7 @@ aside {
   height: 395px;
   width: 250px;
   margin: 10px;
-  background-color: #f2f2f2;
+   background-color: #ffffff;
   border-radius: 15px;
   box-shadow: 15px 5px 5px #f2f2f2;
 }
@@ -311,10 +392,10 @@ aside {
   flex-direction: column;
   justify-content: flex-start;
   background-color: #ffffff;
+  border-radius: 15px;
   height: 160px;
   width: 250px;
-  box-shadow: 10px 5px 5px #f2f2f2;
-  margin: 10px;
+  box-shadow: 15px 5px 5px #f2f2f2;
 }
 
 .deux_colonnes {
@@ -326,14 +407,14 @@ aside {
 .img_largeur img {
   width: 100%;
   height: 110px;
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 15px 15px 0px 0px;
   object-fit: cover;
 }
 
 .img_largeur_frioul img {
   width: 100%;
   height: 85px;
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 15px 15px 0px 0px;
   object-fit: cover;
 }
 
@@ -341,9 +422,13 @@ aside {
   background-color: #ffffff;
   height: 135px;
   width: 250px;
-  box-shadow: 10px 5px 5px #f2f2f2;
-  padding: 10px;
-  margin: 10px;
+  box-shadow: 15px 5px 5px #f2f2f2;
+  margin-top: 120px;
+}
+
+.box_activity p
+{
+  font-weight: bold;
 }
 
 /*bloc footer*/
@@ -361,10 +446,6 @@ footer {
   justify-content: flex-start;
 }
 
-footer a:hover {
-  color: black;
-}
-
 footer li {
   text-decoration: none;
   list-style: none;
@@ -375,6 +456,8 @@ footer a {
   color: black;
 }
 
-footer a:hover {
-  color: black;
+footer p
+{
+  font-weight: bold;
+  margin-left: 41px;;
 }
