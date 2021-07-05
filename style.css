@@ -207,7 +207,7 @@ nav {
 
 /**Bloc Hébergement et Plus populaire**/
 
-#bloc_hebergement_populaire {
+#box_hosting_populary {
   display: flex;
 }
 
@@ -217,15 +217,19 @@ nav {
 
 /**Bloc hébergement**/
 
-section {
+#hosting {
   background-color: #f2f2f2;
   border: 3px #f2f2f2 solid;
   border-radius: 15px;
+  height: 595px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  width: 70%;
-  height: 595px;
+  justify-content: space-between;
+}
+
+#hosting  h2 {
+  
+  margin-left: 20px;
 }
 
 .cards_text_bold,
@@ -233,30 +237,31 @@ section {
   font-weight: bold;
 }
 
-.content_hebergement {
+.content_hosting {
   margin-left: 20px;
   line-height: 12px;
 }
 
-.line_first_hebergement {
+.line_first {
   display: flex;
-  justify-content: space-around;
+  margin-right: 20px;
 }
 
-.line_second_hebergement {
+.line_second {
   display: flex;
-  justify-content: space-around;
+  margin-right: 20px;
 }
 
-.media_hebergement {
+.cards_hosting {
   width: 220px;
   height: 194px;
   background-color: #ffffff;
   border-radius: 15px;
   border: 3px solid white;
+  margin-left: 20px;
 }
 
-.media_hebergement img {
+.cards_hosting img {
   width: 100%;
   height: 100px;
   border-radius: 15px 15px 0px 0px;
@@ -280,31 +285,41 @@ aside {
   background-color: #f2f2f2;
   border: 3px #f2f2f2 solid;
   border-radius: 15px;
+  width: 30%;
+  max-width: 370px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin-left: 40px;
+  margin-left: 39px;
 }
 
-.title_populaire {
+.title_populary {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 325px;
+  width: 342px;
+  margin-top: -33px;
+}
+
+aside h2 {
+  margin-left: 22px;
 }
 
 .fa-chart-line {
-  font-size: 1.5em;
+  font-size: 1.2em;
+  margin-bottom: 1px;
+  margin-top: 18px;
+  margin-right: 15px;
 }
 
 .media_populaire {
   display: flex;
-  width: 350px;
+  width: 310px;
   height: 130px;
   background-color: #ffffff;
   border-radius: 15px;
   border: 3px solid white;
+  margin-top: -41px;
 }
 
 .media_populaire img {
@@ -333,16 +348,16 @@ aside {
 }
 .box_activity {
   display: flex;
-  justify-content: space-between;
   height: 425px;
 }
 
 .media_activite_hauteur {
-  width: 250px;
+  width: 270px;
   height: 395px;
   background-color: #ffffff;
   border-radius: 15px;
   box-shadow: 10px 10px 10px #f2f2f2;
+  margin-right: 41px;
 }
 
 .media_activite_hauteur img {
@@ -358,11 +373,12 @@ aside {
 }
 
 .media_activite_mediumlarg {
-  width: 250px;
+  width: 270px;
   height: 190px;
   background-color: #ffffff;
   border-radius: 15px;
   box-shadow: 10px 10px 10px #f2f2f2;
+  margin-right: 40px;
 }
 
 .media_activite_mediumlarg img {
@@ -373,7 +389,7 @@ aside {
 }
 
 .media_activite_largeur_frioul {
-  width: 250px;
+  width: 270px;
   height: 135px;
   background-color: #ffffff;
   border-radius: 15px;
@@ -388,7 +404,7 @@ aside {
 }
 
 .media_activite_larg_dame {
-  width: 250px;
+  width: 270px;
   height: 135px;
   background-color: #ffffff;
   border-radius: 15px;
