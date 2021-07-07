@@ -2,7 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css" />
+
     <script
       src="https://kit.fontawesome.com/477a55e77a.js"
       crossorigin="anonymous"
@@ -13,35 +13,33 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Page acceuil Reservia</title>
   </head>
 
   <body>
-    <div id="bloc_page">
+    <div class="bloc_page">
       <!--header-->
-      <header>
-        <div>
-          <a href="#">
-            <img
-              src="images/logo-entreprise-reservia.png"
-              alt="Logo entreprise
+      <header class="topbar">
+        <a href="#" class="topbar_logo">
+          <img
+            src="images/logo-entreprise-reservia.png"
+            alt="Logo entreprise
               Reservia"
-              class="logo_reservia"
-          /></a>
-        </div>
+        /></a>
         <nav class="nav_bar">
           <a href="#hebergement">Hébergements</a>
-          <a href="#activite"><span class="txt_grey">Activités</span></a>
-          <a href="#"><span class="txt_bold">S'inscrire</span></a>
+          <a href="#activite" class="txt_grey">Activités</a>
+          <a href="#" class="txt_bold">S'inscrire</a>
         </nav>
       </header>
 
       <!--baseline-->
 
-      <h2>Trouvez votre hébergement pour les vacances de rêve</h2>
-      <p>En plein centre ville ou en pleine nature</p>
+      <h2 class="baseline_title">Trouvez votre hébergement pour les vacances de rêve</h2>
+      <p class="baseline_txt">En plein centre ville ou en pleine nature</p>
 
       <!--search city-->
 
@@ -84,7 +82,7 @@
       <!--results hosting-->
 
       <div id="box_hosting_populary">
-        <section id="hosting">
+        <section id="hebergement" class="hosting">
           <h2>Hébergement à Marseille</h2>
           <div class="line_first">
             <div class="cards_hosting">
