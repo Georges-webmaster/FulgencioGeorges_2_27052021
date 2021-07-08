@@ -1,5 +1,9 @@
 /**Body**/
 
+*, *::after{
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Raleway", sans-serif; /*Police Raleway Light 300 et semi-bold 600*/
   margin: 0;
@@ -23,7 +27,7 @@ li {
 
 .bloc_page {
   margin: 0 auto;
-  max-width: 1345px;
+  max-width: 1320px;
 }
 
 /**header**/
@@ -36,12 +40,13 @@ li {
 }
 
 .topbar_logo img {
-  width: 42%;
+  width: 110px;
+  height: 45px;
 }
 
 .nav_bar a {
   color: #0065fc;
-  font-size: 1em;
+  font-size: 0.9em;
   text-decoration: none;
   display: inline-block;
   position: relative;
@@ -68,7 +73,7 @@ li {
 }
 
 .nav_bar .txt_grey {
-  font-size: 1em;
+  font-size: 0.9em;
   color: initial;
 }
 
@@ -82,7 +87,7 @@ li {
 
 #champ_recherche span {
   width: 40px;
-  height: 42px;
+  height: 46px;
   background-color: #f2f2f2;
   border: 2px solid #f2f2f2;
   border-radius: 15px 0px 0px 15px;
@@ -95,8 +100,8 @@ li {
 
 #champ_recherche input {
   border: 2px solid #f2f2f2;
-  width: 200px;
-  height: 40px;
+  width: 227px;
+  height: 46px;
   cursor: pointer;
   padding-right: 0px;
 }
@@ -110,7 +115,7 @@ li {
 }
 
 #champ_recherche button {
-  width: 120px;
+  width: 130px;
   height: 46px;
   background-color: #0065fc;
   border: 2px solid #0065fc;
@@ -233,8 +238,7 @@ li {
   flex-direction: column;
   justify-content: space-between;
   margin-right: 20px;
-  width: 60%;
-  min-width: 880px;
+  width: 64%;
 }
 
 .hosting h2 {
@@ -311,7 +315,7 @@ aside {
   background-color: #f2f2f2;
   border: 3px #f2f2f2 solid;
   border-radius: 15px;
-  width: 29%;
+  width: 31%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -376,13 +380,15 @@ aside h2 {
 .activite_titre {
   margin-top: 40px;
 }
+
 .box_activity {
   display: flex;
+  width: 98%;
   height: 445px;
 }
 
 .media_activite_hauteur {
-  width: 305px;
+  width: 300px;
   height: 440px;
   background-color: #ffffff;
   border-radius: 15px;
@@ -403,7 +409,7 @@ aside h2 {
 }
 
 .media_activite_mediumlarg {
-  width: 305px;
+  width: 300px;
   height: 240px;
   background-color: #ffffff;
   border-radius: 15px;
@@ -419,7 +425,7 @@ aside h2 {
 }
 
 .media_activite_largeur_frioul {
-  width: 305px;
+  width: 300px;
   height: 165px;
   background-color: #ffffff;
   border-radius: 15px;
@@ -435,7 +441,7 @@ aside h2 {
 }
 
 .media_activite_larg_dame {
-  width: 305px;
+  width: 300px;
   height: 195px;
   background-color: #ffffff;
   border-radius: 15px;
@@ -451,7 +457,7 @@ aside h2 {
 }
 
 .media_activite_mediumlarg_long {
-  width: 305px;
+  width: 300px;
   height: 210px;
   background-color: #ffffff;
   border-radius: 15px;
@@ -484,6 +490,11 @@ footer {
   margin-top: 60px;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  height: 220px;
+  line-height: 30px;
+  font-size: 1em;
+
 }
 
 footer p {
@@ -502,4 +513,47 @@ footer a {
 
 footer ul {
   padding-left: 0px;
+}
+
+
+
+@media only screen and (max-width: 1280px) {
+  .bloc_page {
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 786px)
+{
+  .topbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+}
+
+
+@media only screen 
+and (min-device-width: 375px)
+and (max-device-width:667px)
+{
+  .bloc_page{
+    padding: 0 20px;
+  }
+
+  .topbar {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
 }
