@@ -11,7 +11,7 @@ body {
   background: #ffffff;
 }
 
-/** Taille police et graissage**/
+/** Taille police et graisse texte**/
 
 h2 {
   font-size: 1.2em;
@@ -45,6 +45,8 @@ li {
   height: 40px;
 }
 
+/**menu de navigation**/
+
 .nav_bar a {
   color: #0065fc;
   font-size: 0.9em;
@@ -76,6 +78,18 @@ li {
 .nav_bar .txt_grey {
   font-size: 0.9em;
   color: initial;
+}
+
+/**Baseline**/
+
+.baseline_title {
+  margin-top: 38px;
+  margin-bottom: 10px;
+}
+
+.baseline_txt {
+  margin-top: 1Opx;
+  margin-bottom: 20px;
 }
 
 /**Bloc champ recherche**/
@@ -182,40 +196,29 @@ li {
   margin-right: 12px;
 }
 
-/**Baseline**/
-
-.baseline_title {
-  margin-top: 50px;
-}
-
-.baseline_txt {
-  margin-top: 17px;
-  margin-bottom: 24px;
-}
-
 /**bloc résultat**/
 
 #result_search {
   display: flex;
   justify-content: flex-start;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 30px;
+  margin-bottom: 25px;
 }
 
 #result_search span {
   color: #0065fc;
   border: 2px #f2f2f2 solid;
-  width: 26px;
-  height: 26px;
-  border-radius: 26px;
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
   text-align: center;
-  line-height: 24px;
-  margin-right: -5px;
+  line-height: 20px;
+  font-size: small;
 }
 
 #result_search p {
-  margin-left: 15px;
-  margin-top: 9px;
+  margin-left: 10px;
+  margin-top: 3px;
 }
 
 /**Bloc Hébergement et Plus populaire**/
@@ -258,7 +261,7 @@ li {
 }
 
 .content_hosting {
-  margin-left: 20px;
+  margin-left: 15px;
   line-height: 10px;
 }
 
@@ -336,7 +339,7 @@ aside h2 {
 
 .fa-chart-line {
   font-size: 1.2em;
-  margin-top: 42px;
+  margin-top: 47px;
   margin-bottom: 22px;
   margin-right: 8px;
 }
@@ -359,11 +362,14 @@ aside h2 {
 
 .media_populaire p {
   margin-left: 20px;
-  margin-top: 5px;
+  margin-top: 10px;
+  line-height: 10px;
 }
 
 .stars_populaire {
+  display: inline-block;
   margin-left: 20px;
+  margin-top: 20px;
 }
 
 .media_populaire span {
