@@ -29,6 +29,8 @@ li {
 .bloc_page {
   margin: 0 auto;
   max-width: 1340px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /**header**/
@@ -88,7 +90,7 @@ li {
 }
 
 .baseline_txt {
-  margin-top: 1Opx;
+  margin-top: 1opx;
   margin-bottom: 20px;
 }
 
@@ -517,6 +519,18 @@ footer a {
 
 footer ul {
   padding-left: 0px;
+}
+
+.colunone {
+  margin-left: 57px;
+}
+
+.coluntwo {
+  margin-right: -15px;
+}
+
+.colunthree {
+  margin-right: 47px;
 }
 
 @media only screen and (max-width: 1280px) {
