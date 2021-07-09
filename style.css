@@ -382,12 +382,6 @@ aside h2 {
   font-weight: bold;
 }
 
-.media_populaire a {
-  display: inherit;
-  text-decoration: none;
-  color: #000000;
-}
-
 /**Bloc activité**/
 
 .activite_titre {
@@ -546,13 +540,6 @@ footer ul {
 }
 
 @media only screen and (max-width: 800px) {
-  .topbar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 50px;
-  }
 }
 
 @media only screen and (max-width: 415px) {
@@ -560,12 +547,69 @@ footer ul {
     margin: 0;
     padding: 0;
   }
-  .bloc_page {
-    padding: 0 20px;
+  .topbar {
+    display: block;
+    margin-top: 20px;
+  }
+  #filtres {
+    display: block;
   }
 
-  .topbar {
+  #box_hosting_populary {
+    display: block;
+  }
+  .hosting {
+    display: block;
+    border: none;
+    height: 1350px;
+    width: 345px;
+    margin-bottom: 20px;
+   
+  }
+  .line_first {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .line_second {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .cards_hosting {
+    width: 330px;
+    height: 200px;
+    margin-bottom: 15px;
+  }
+  .content_hosting {
+    line-height: 25px;
+  }
+  aside {
+    display: block;
+    width: 345px;
+    height: 570px;
+  }
+
+  .title_populary {
     display: flex;
-    flex-wrap: wrap;
+   
+  }
+
+  .box_activity {
+    display: block;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .media_activite_hauteur {
+    width: 305px;
+    height: 165px;
+  }
+
+  .media_activite_hauteur img {
+    width: 100%;
+    height: 107px;
   }
 }
