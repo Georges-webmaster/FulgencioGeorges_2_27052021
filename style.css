@@ -141,6 +141,9 @@ li {
   font-weight: bold;
   cursor: pointer;
 }
+.phone_search {
+  display: none;
+}
 
 /**Bloc filtres**/
 #filtres {
@@ -543,16 +546,9 @@ footer ul {
 }
 
 @media only screen and (max-width: 415px) {
-  * {
-    margin: 0;
-    padding: 0;
-  }
+  /*Selecteur universel*/
 
   /*Body*/
-
-  body {
-    max-width: 415px;
-  }
 
   /*Bloc Page*/
 
@@ -565,38 +561,25 @@ footer ul {
 
   .topbar {
     display: block;
-    margin-top: 30px;
+    margin-top: 20px;
     padding-left: 20px;
   }
 
   /*Navigation*/
 
   .nav_bar a {
+    
     margin-right: 50px;
     margin-left: 30px;
-  }
-
-  .nav_bar a::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    background: #0065fc;
-    transition: width 0.2s ease-in-out;
-    top: 40px;
-  }
-
-  .nav_bar a:hover:after {
-    width: 100%;
+    margin-top: 30px;
   }
 
   header .txt_bold {
     position: absolute;
-    top: 30px;
-    left: 275px;
+    top: 6px;
+    left: 260px;
     right: 50px;
-  }
+}
 
   /*Baseline*/
 
@@ -611,59 +594,45 @@ footer ul {
     padding-left: 20px;
   }
 
-  /**Bloc champ recherche**/
+  /*Champ de recherche*/
 
-  #champ_recherche {
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 10px;
-  }
+  #champ_recherche span
 
-  #champ_recherche span {
+  {
     width: 50px;
-    height: 50px;
-    background-color: #f2f2f2;
-    border: 2px solid #f2f2f2;
-    border-radius: 15px 0px 0px 15px;
-    padding-left: 3px;
-    margin-right: -2px;
-    text-align: center;
-    line-height: 40px;
-    font-size: 1.1em;
     margin-left: 20px;
   }
 
-  #champ_recherche input {
-    border: 2px solid #f2f2f2;
-    width: 230px;
-    height: 50px;
-    cursor: pointer;
-    padding-right: 0px;
+  #champ_recherche input
+
+  {
+    height: 46px;
+    width: 280px;
   }
 
-  ::placeholder {
-    font-family: "Raleway", sans-serif;
-    font-weight: bolder;
-    color: #000;
-    font-size: 0.9em;
-    margin-left: 20px;
+  .desktop_btn {
+    display: none;
   }
-
-  #champ_recherche button {
-    width: 50px;
-    height: 50px;
+  #champ_recherche .phone_search {
+    display: block;
+    width: 46px;
+    height: 46px;
     background-color: #0065fc;
     border: 2px solid #0065fc;
-    border-radius: 0px 20px 20px 0px / 50px 15px 15px 0px;
-    color: white;
+    border-radius: 15px;
+    color: #ffffff;
     font-weight: bold;
     cursor: pointer;
+    line-height: 5px;
+    font-size: 15px;
+    margin-left: -46px;
   }
 
   /*Filtres*/
 
   #filtres p {
-    margin-bottom: 10px;
+    margin-top: -4px;
+    margin-bottom: 15px;
   }
 
   #filtres {
@@ -685,7 +654,7 @@ footer ul {
   /*Résultat recherche*/
   #result_search {
     margin-left: 20px;
-    margin-top: 19px;
+    margin-top: 23px;
   }
 
   #result_search span {
@@ -737,7 +706,7 @@ footer ul {
     margin-bottom: 15px;
   }
   .content_hosting {
-    line-height: 25px;
+    line-height: 8px;
   }
 
   .hebergement_link {
@@ -753,6 +722,7 @@ footer ul {
     background-color: #f2f2f2;
     border: none;
     border-radius: 0px;
+
   }
 
   aside h2 {
@@ -783,7 +753,7 @@ footer ul {
     border-radius: 15px;
     border: 6px solid white;
     margin-left: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 
   /*Activités*/
