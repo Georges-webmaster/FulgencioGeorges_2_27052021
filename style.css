@@ -555,6 +555,7 @@ footer ul {
   .bloc_page {
     padding-right: 0px;
     padding-left: 0px;
+    margin-right: 0px;
   }
 
   /*Header*/
@@ -568,7 +569,6 @@ footer ul {
   /*Navigation*/
 
   .nav_bar a {
-    
     margin-right: 50px;
     margin-left: 30px;
     margin-top: 30px;
@@ -579,8 +579,20 @@ footer ul {
     top: 6px;
     left: 260px;
     right: 50px;
-}
+  }
 
+  /*Résolution pour barre bleue sous-menu*/
+
+  .nav_bar a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background: #0065fc;
+    transition: width 0.2s ease-in-out;
+    top: 30px;
+  }
   /*Baseline*/
 
   .baseline_title {
@@ -596,16 +608,12 @@ footer ul {
 
   /*Champ de recherche*/
 
-  #champ_recherche span
-
-  {
+  #champ_recherche span {
     width: 50px;
     margin-left: 20px;
   }
 
-  #champ_recherche input
-
-  {
+  #champ_recherche input {
     height: 46px;
     width: 280px;
   }
@@ -643,8 +651,8 @@ footer ul {
     width: 300px;
     height: 40px;
     margin-left: 0px;
-    margin-top: 0px;
-    margin-bottom: 10px;
+    margin-top: 28px;
+    margin-bottom: 0px;
   }
 
   .btn {
@@ -655,6 +663,7 @@ footer ul {
   #result_search {
     margin-left: 20px;
     margin-top: 23px;
+    margin-bottom: 10px;
   }
 
   #result_search span {
@@ -673,17 +682,22 @@ footer ul {
   /*Hébergement et Populaire*/
 
   #box_hosting_populary {
-    display: block;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   /*Hébergement*/
+
   .hosting {
     display: block;
     height: 1400px;
     width: 340px;
     margin-bottom: 20px;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 0px;
   }
   .line_first {
     display: block;
@@ -704,6 +718,7 @@ footer ul {
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 15px;
+    box-shadow: 10px 10px 10px #f2f2f2;
   }
   .content_hosting {
     line-height: 8px;
@@ -718,11 +733,10 @@ footer ul {
   aside {
     display: block;
     width: 375px;
-    height: 570px;
+    height: 540px;
     background-color: #f2f2f2;
     border: none;
     border-radius: 0px;
-
   }
 
   aside h2 {
@@ -761,7 +775,7 @@ footer ul {
   .box_activity {
     display: block;
     width: 360px;
-    height: 1260px;
+    height: 1255px;
     margin-left: 20px;
   }
 
@@ -845,11 +859,12 @@ footer ul {
 
   .colunthree {
     margin-left: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
   }
 
   footer {
     display: block;
     height: 450px;
+    margin-top: 25px;
   }
 }
