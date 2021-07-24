@@ -1286,7 +1286,7 @@ footer ul {
   }
 
   .cards_hosting {
-    width: 118%;
+    width: 93%;
     height: 200px;
     margin-left: 0px;
     margin-right: 0px;
@@ -1352,7 +1352,6 @@ footer ul {
 
   .box_activity {
     display: block;
-    width: 360px;
     height: 1255px;
     padding-left: 20px;
   }
@@ -1367,7 +1366,7 @@ footer ul {
   }
 
   .media_activite_hauteur {
-    width: 109%;
+    width: 93%;
     height: 190px;
     margin-bottom: 20px;
   }
@@ -1378,7 +1377,7 @@ footer ul {
   }
 
   .media_activite_mediumlarg {
-    width: 109%;
+    width: 93%;
     height: 190px;
     margin-bottom: 20px;
   }
@@ -1389,7 +1388,7 @@ footer ul {
   }
 
   .media_activite_largeur_frioul {
-    width: 109%;
+    width: 93%;
     height: 190px;
     margin-bottom: 20px;
     margin-top: 0px;
@@ -1401,7 +1400,7 @@ footer ul {
   }
 
   .media_activite_larg_dame {
-    width: 109%;
+    width: 93%;
     height: 190px;
     margin-bottom: 20px;
   }
@@ -1412,7 +1411,7 @@ footer ul {
   }
 
   .media_activite_mediumlarg_long {
-    width: 109%;
+    width: 93%;
     height: 190px;
   }
 
@@ -1464,10 +1463,15 @@ footer ul {
   .title_populary {
     width: 340px;
   }
+
+  aside {
+    width: 100%;
+  }
+
   /*Hebergement*/
 
   .cards_hosting {
-    width: 106%;
+    width: 94%;
   }
 
   /*Activity*/
@@ -1552,7 +1556,7 @@ footer ul {
   /*Hebergement*/
 
   .cards_hosting {
-    width: 87%;
+    width: 95%;
   }
 
   /*Activity*/
