@@ -46,6 +46,12 @@ li {
   height: 40px;
 }
 
+.titlewebsite
+
+{
+  display: none;
+}
+
 /**menu de navigation**/
 
 .nav_bar a {
@@ -648,7 +654,7 @@ footer ul {
   .cards_hosting {
     width: 320px;
     height: 255px;
-    margin-left: 40px;
+    margin-left: 32px;
     margin-right: 2px;
   }
 
@@ -687,7 +693,7 @@ footer ul {
   .title_populary {
     display: flex;
     justify-content: space-between;
-    width: 935px;
+    width: 96%;
     height: 15px;
     margin-bottom: 40px;
     margin-top: 28px;
@@ -975,7 +981,6 @@ footer ul {
     width: 330px;
     height: 230px;
     margin-left: 0px;
-    margin-right: 20px;
     box-shadow: 10px 10px 10px #f2f2f2;
   }
   .content_hosting {
@@ -1008,7 +1013,7 @@ footer ul {
   .title_populary {
     display: flex;
     justify-content: space-between;
-    width: 750px;
+    width: 98%;
     height: 15px;
     margin-bottom: 40px;
     margin-top: 28px;
@@ -1051,7 +1056,7 @@ footer ul {
   }
 
   .media_activite_hauteur {
-    width: 220px;
+    width: 30%;
     height: 200px;
     margin-bottom: 20px;
   }
@@ -1062,7 +1067,7 @@ footer ul {
   }
 
   .media_activite_mediumlarg {
-    width: 220px;
+    width: 40%;
     height: 200px;
     margin-bottom: 20px;
   }
@@ -1072,7 +1077,7 @@ footer ul {
   }
 
   .media_activite_largeur_frioul {
-    width: 220px;
+    width: 40%;
     height: 200px;
     margin-bottom: 20px;
     margin-top: 0px;
@@ -1083,7 +1088,7 @@ footer ul {
   }
 
   .media_activite_larg_dame {
-    width: 220px;
+    width: 40%;
     margin-right: 20px;
     height: 200px;
     margin-bottom: 20px;
@@ -1095,7 +1100,7 @@ footer ul {
     height: 135px;
   }
   .media_activite_mediumlarg_long {
-    width: 220px;
+    width: 40%;
     height: 200px;
   }
   .media_activite_mediumlarg_long img {
@@ -1355,7 +1360,7 @@ footer ul {
   .title_populary {
     display: flex;
     justify-content: space-between;
-    width: 380px;
+    width: 89%;
     height: 15px;
     margin-bottom: 40px;
     margin-top: 28px;
@@ -1496,7 +1501,7 @@ footer ul {
   /*Les plus Populaire*/
 
   .title_populary {
-    width: 340px;
+    width: 90%;
   }
 
   aside {
@@ -1571,7 +1576,7 @@ footer ul {
   /*Les plus Populaire*/
 
   .title_populary {
-    width: 290px;
+    width: 90%;
   }
 
   aside {
