@@ -46,9 +46,7 @@ li {
   height: 40px;
 }
 
-.titlewebsite
-
-{
+.titlewebsite {
   display: none;
 }
 
@@ -556,7 +554,7 @@ footer ul {
   /*Footer*/
 
   .colunone {
-    margin-left: 381px;
+    margin-left: 50px;
   }
 
   .coluntwo {
@@ -564,7 +562,7 @@ footer ul {
   }
 
   .colunthree {
-    margin-right: 379px;
+    margin-right: 58px;
   }
 }
 
@@ -730,23 +728,92 @@ footer ul {
 
   /*Activity*/
 
+  .box_activity {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 740px;
+  }
+
+  .deux_colonnes
+
+  {
+    display: flex;
+    flex-direction: row;
+  }
+
   .media_activite_hauteur {
-    margin-right: 20px;
+    width: 340px;
+    height: 340px;
+    margin-right: 40px;
   }
+
+  .media_activite_hauteur img {
+    height: 290px;
+  }
+
   .media_activite_mediumlarg {
-    width: 280px;
-    margin-right: 20px;
+    width: 340px;
+    height: 340px;
+    margin-right: 40px;
   }
+
+  .media_activite_mediumlarg img
+
+  {
+    height: 290px;
+  }
+
+
   .media_activite_largeur_frioul {
-    width: 280px;
+    width: 340px;
+    height: 340px;
+    margin-top: 0px;
+  }
+
+  .media_activite_largeur_frioul img  
+
+  {
+    height: 290px;
   }
 
   .media_activite_larg_dame {
-    width: 280px;
+    width: 340px;
+    height: 340px;
+    margin-bottom: 0px;
+    margin-right: 40px;
   }
+
+  .media_activite_larg_dame img 
+
+  {
+    height: 290px;
+  }
+
+
   .media_activite_mediumlarg_long {
-    width: 280px;
+    width: 340px;
+    height: 340px;
   }
+
+  .media_activite_mediumlarg_long
+
+  {
+    height: 290px;
+  }
+
+  .media_activite_mediumlarg_long
+
+  {
+      width: 340px;
+    height: 340px;
+  }
+
+    .media_activite_mediumlarg_long img 
+
+    {
+      height: 290px;
+    }
+
 
   /*Footer*/
 
@@ -757,6 +824,7 @@ footer ul {
     height: 220px;
     line-height: 30px;
     font-size: 1em;
+    margin-top: 40px;
   }
   .colunone {
     margin-left: 61px;
