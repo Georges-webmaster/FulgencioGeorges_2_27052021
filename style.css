@@ -596,11 +596,10 @@ footer ul {
 
 @media only screen and (max-width: 1200px) and (min-width: 770px) {
   /*Bloc page*/
+
   .bloc_page {
     margin: 0 auto;
     width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
   }
 
   /*Header*/
@@ -629,7 +628,11 @@ footer ul {
 
   /*Filtres*/
 
-  #filtres {
+  .btn {
+    margin-right: 0px;
+  }
+
+  #filtres p {
     margin-left: 20px;
   }
 
@@ -729,22 +732,19 @@ footer ul {
   /*Activity*/
 
   .box_activity {
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 740px;
+    display: block;
+    height: 2250px;
   }
 
-  .deux_colonnes
-
-  {
-    display: flex;
-    flex-direction: row;
+  .deux_colonnes {
+    display: block;
   }
 
   .media_activite_hauteur {
-    width: 340px;
-    height: 340px;
+    width: 100%;
+    height: 345px;
     margin-right: 40px;
+    margin-bottom: 40px;
   }
 
   .media_activite_hauteur img {
@@ -752,68 +752,43 @@ footer ul {
   }
 
   .media_activite_mediumlarg {
-    width: 340px;
+    width: 100%;
     height: 340px;
-    margin-right: 40px;
+    margin-bottom: 40px;
   }
 
-  .media_activite_mediumlarg img
-
-  {
+  .media_activite_mediumlarg img {
     height: 290px;
   }
 
-
   .media_activite_largeur_frioul {
-    width: 340px;
+    width: 100%;
     height: 340px;
-    margin-top: 0px;
+    margin-bottom: 40px;
   }
 
-  .media_activite_largeur_frioul img  
-
-  {
+  .media_activite_largeur_frioul img {
     height: 290px;
   }
 
   .media_activite_larg_dame {
-    width: 340px;
+    width: 100%;
     height: 340px;
-    margin-bottom: 0px;
-    margin-right: 40px;
+    margin-bottom: 40px;
   }
 
-  .media_activite_larg_dame img 
-
-  {
+  .media_activite_larg_dame img {
     height: 290px;
   }
-
 
   .media_activite_mediumlarg_long {
-    width: 340px;
+    width: 100%;
     height: 340px;
+    margin-bottom: 40px;
   }
-
-  .media_activite_mediumlarg_long
-
-  {
+  .media_activite_mediumlarg_long img {
     height: 290px;
   }
-
-  .media_activite_mediumlarg_long
-
-  {
-      width: 340px;
-    height: 340px;
-  }
-
-    .media_activite_mediumlarg_long img 
-
-    {
-      height: 290px;
-    }
-
 
   /*Footer*/
 
@@ -824,7 +799,7 @@ footer ul {
     height: 220px;
     line-height: 30px;
     font-size: 1em;
-    margin-top: 40px;
+    margin-top: 60px;
   }
   .colunone {
     margin-left: 61px;
@@ -838,20 +813,27 @@ footer ul {
 
 @media only screen and (max-width: 1024px) {
   .media_activite_mediumlarg {
-    width: 225px;
-    margin-right: 20px;
+    width: 100%;
+    height: 340px;
+    margin-bottom: 40px;
   }
 
   .media_activite_largeur_frioul {
-    width: 225px;
+    width: 100%;
+    height: 340px;
+    margin-bottom: 40px;
   }
 
   .media_activite_larg_dame {
-    width: 220px;
+    width: 100%;
+    height: 340px;
+    margin-bottom: 40px;
   }
 
   .media_activite_mediumlarg_long {
-    width: 220px;
+    width: 100%;
+    height: 340px;
+    margin-bottom: 40px;
   }
 
   .colunone {
@@ -893,8 +875,8 @@ footer ul {
   header .txt_bold {
     position: absolute;
     top: 33px;
-    left: 677px;
-    right: 50px;
+    left: 84%;
+    right: 20%;
   }
 
   /*Barre menu navigation*/
@@ -970,6 +952,10 @@ footer ul {
 
   /*Filtres*/
 
+  #filtres {
+    margin-right: 5px;
+  }
+
   #filtres p {
     margin-top: -4px;
     margin-bottom: 15px;
@@ -993,10 +979,10 @@ footer ul {
   }
 
   #result_search span {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     border-radius: 30px;
-    line-height: 25px;
+    line-height: 21px;
   }
 
   #result_search p {
@@ -1034,9 +1020,6 @@ footer ul {
   .line_first {
     display: flex;
     margin-top: 0px;
-    margin-left: 14px;
-    margin-right: 25px;
-    margin-bottom: 30px;
   }
 
   .line_second {
@@ -1056,8 +1039,8 @@ footer ul {
   }
 
   .hebergement_link {
+    margin-top: 15px;
     margin-left: 20px;
-    margin-top: 30px;
   }
 
   /*Les plus Populaire*/
@@ -1089,12 +1072,12 @@ footer ul {
 
   .fa-chart-line {
     margin-top: 15px;
-    margin-right: 35px;
+    margin-right: 31px;
   }
 
   .media_populaire {
     display: flex;
-    width: 92%;
+    width: 93%;
     height: 202px;
     background-color: #ffffff;
     border-radius: 15px;
@@ -1106,17 +1089,15 @@ footer ul {
   /*Activités*/
 
   .box_activity {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 480px;
+    display: block;
     padding-left: 20px;
+    height: 1515px;
   }
 
   .deux_colonnes {
-    display: flex;
-    flex-direction: row;
+    display: block;
   }
+
   .activite_titre {
     margin-top: 20px;
     margin-bottom: 30px;
@@ -1124,56 +1105,58 @@ footer ul {
   }
 
   .media_activite_hauteur {
-    width: 30%;
-    height: 200px;
+    width: 96%;
+    height: 230px;
     margin-bottom: 20px;
+    margin-right: 0px;
   }
 
   .media_activite_hauteur img {
     width: 100%;
-    height: 135px;
+    height: 170px;
   }
 
   .media_activite_mediumlarg {
-    width: 40%;
-    height: 200px;
+    width: 96%;
+    height: 230px;
     margin-bottom: 20px;
+    margin-right: 0px;
   }
   .media_activite_mediumlarg img {
     width: 100%;
-    height: 135px;
+    height: 170px;
   }
 
   .media_activite_largeur_frioul {
-    width: 40%;
-    height: 200px;
+    width: 96%;
+    height: 230px;
     margin-bottom: 20px;
     margin-top: 0px;
   }
   .media_activite_largeur_frioul img {
     width: 100%;
-    height: 135px;
+    height: 170px;
   }
 
   .media_activite_larg_dame {
-    width: 40%;
-    margin-right: 20px;
-    height: 200px;
+    width: 96%;
+    height: 230px;
     margin-bottom: 20px;
-    margin-right: 20px;
   }
 
   .media_activite_larg_dame img {
     width: 100%;
-    height: 135px;
+    height: 170px;
   }
+
   .media_activite_mediumlarg_long {
-    width: 40%;
-    height: 200px;
+    width: 96%;
+    height: 230px;
+    margin-bottom: 40px;
   }
   .media_activite_mediumlarg_long img {
     width: 100%;
-    height: 135px;
+    height: 170px;
   }
 
   .box_activity p {
@@ -1183,9 +1166,8 @@ footer ul {
   /*Footer*/
 
   .colunone {
-    margin-left: 20px;
-    margin-bottom: 90px;
-    padding-top: 34px;
+    margin-top: 34px;
+    margin-bottom: 95px;
   }
 
   .coluntwo {
@@ -1201,8 +1183,36 @@ footer ul {
 
   footer {
     display: flex;
-    height: 360px;
+    height: 260px;
     margin-top: 25px;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  /*Hosting*/
+  .hosting {
+    height: 1990px;
+  }
+
+  .line_first {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+
+  .cards_hosting {
+    width: 100%;
+    height: 285px;
+    margin-bottom: 20px;
+  }
+
+  .cards_hosting img {
+    height: 180px;
+  }
+
+  .line_second {
+    display: block;
+    margin-top: 0px;
   }
 }
 
@@ -1369,7 +1379,7 @@ footer ul {
 
   .hosting {
     display: block;
-    height: 1405px;
+    height: 1965px;
     margin-bottom: 20px;
     margin-right: 0px;
     margin-left: 0px;
@@ -1393,7 +1403,7 @@ footer ul {
 
   .cards_hosting {
     width: 93%;
-    height: 200px;
+    height: 290px;
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 15px;
@@ -1562,7 +1572,7 @@ footer ul {
   header .txt_bold {
     position: absolute;
     top: 33px;
-    left: 290px;
+    left: 75%;
     right: 50px;
   }
 
