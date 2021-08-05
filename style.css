@@ -105,17 +105,16 @@ li {
   margin-bottom: 20px;
 }
 
-#champ_recherche span {
+.fa-map-marker-alt {
   width: 40px;
   height: 46px;
-  background-color: #f2f2f2;
-  border: 2px solid #f2f2f2;
   border-radius: 15px 0px 0px 15px;
   padding-left: 3px;
   margin-right: -2px;
   text-align: center;
   line-height: 40px;
   font-size: 1.1em;
+  background-color: #f2f2f2;
 }
 
 #champ_recherche input {
@@ -133,7 +132,6 @@ li {
   font-size: 0.9em;
   margin-left: 20px;
 }
-
 #champ_recherche button {
   width: 130px;
   height: 46px;
@@ -144,7 +142,8 @@ li {
   font-weight: bold;
   cursor: pointer;
 }
-.phone_search {
+
+.searchicone {
   display: none;
 }
 
@@ -923,7 +922,6 @@ footer ul {
   /*Champ de recherche*/
 
   #champ_recherche span {
-    width: 50px;
     margin-left: 20px;
   }
 
@@ -932,17 +930,18 @@ footer ul {
     width: 280px;
   }
 
-  .desktop_btn {
+  .searchtxt {
     display: none;
   }
-  #champ_recherche .phone_search {
-    display: block;
+
+  #champ_recherche .searchicone {
+    display: inline-block;
+    margin-left: 0px;
+  }
+
+  #champ_recherche button {
     width: 46px;
     height: 46px;
-    background-color: #0065fc;
-    border: 2px solid #0065fc;
-    border-radius: 15px;
-    color: #ffffff;
     font-weight: bold;
     cursor: pointer;
     line-height: 5px;
@@ -1298,7 +1297,6 @@ footer ul {
   /*Champ de recherche*/
 
   #champ_recherche span {
-    width: 50px;
     margin-left: 20px;
   }
 
@@ -1307,17 +1305,18 @@ footer ul {
     width: 280px;
   }
 
-  .desktop_btn {
+  .searchtxt {
     display: none;
   }
-  #champ_recherche .phone_search {
-    display: block;
+
+  #champ_recherche .searchicone {
+    display: inline-block;
+    margin-left: 2px;
+  }
+
+  #champ_recherche button {
     width: 46px;
     height: 46px;
-    background-color: #0065fc;
-    border: 2px solid #0065fc;
-    border-radius: 15px;
-    color: #ffffff;
     font-weight: bold;
     cursor: pointer;
     line-height: 5px;
